@@ -1,0 +1,12 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "m s-1",
+    "long_name": "U wind direction",
+    "standard_name": "eastward_wind",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CH4_MixingRatio_PICARRO",
+  "units": "ppmv",
+  "scale": 1.0,
+  "fill": -999999.0
+}

@@ -1,0 +1,1312 @@
+{
+  "groups": {},
+  "variables": {
+    "Flight_ID": {
+      "datatype": "|S1",
+      "dimensions": [
+        "flight_strlen"
+      ],
+      "attributes": {
+        "cf_role": "trajectory_id",
+        "long_name": "flight id"
+      }
+    },
+    "time": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "units": "seconds since 2016-01-01 00:00:00.0 UTC",
+        "calendar": "standard",
+        "standard_name": "time",
+        "bounds": "time_bnds"
+      }
+    },
+    "time_bnds": {
+      "datatype": "float64",
+      "dimensions": [
+        "time",
+        "nv"
+      ],
+      "attributes": {
+        "long_name": "boundary (start and end time) of each time step"
+      }
+    },
+    "UTC": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "s",
+        "long_name": "start elapsed time in seconds from 0000 UTC",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "JDAY": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "d",
+        "long_name": "julian day of year starting Jan 1 UTC",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "LOCAL_SUN_TIME": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "h",
+        "long_name": "local sun time",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "LATITUDE": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree_north",
+        "long_name": "latitude",
+        "standard_name": "latitude"
+      }
+    },
+    "LONGITUDE": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree_east",
+        "long_name": "longitude",
+        "standard_name": "longitude"
+      }
+    },
+    "ALTP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m",
+        "long_name": "pressure altitude",
+        "standard_name": "barometric_altitude",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "PRESSURE": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "hPa",
+        "long_name": "static pressure",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "TEMPERATURE": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "K",
+        "long_name": "static air temperature",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "THETA": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "K",
+        "long_name": "potential temperature",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "O3COLUMN": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1",
+        "long_name": "O3 Column",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "SZA": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "long_name": "solar azimuth angle",
+        "units": "degree",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "GPS_ALT": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m",
+        "long_name": "global positioning system altitude",
+        "standard_name": "altitude",
+        "positive": "up",
+        "axis": "Z"
+      }
+    },
+    "GRD_SPD": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m s-1",
+        "long_name": "ground speed",
+        "standard_name": "platform_speed_wrt_ground",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "TAS": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m s-1",
+        "long_name": "true air speed",
+        "standard_name": "platform_speed_wrt_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "IAS": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m s-1",
+        "long_name": "indicated air speed",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "MachNumber": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1",
+        "long_name": "mach number",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "VerticalSpeed": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m s-1",
+        "long_name": "vertical speed",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "HDG": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree",
+        "long_name": "true heading",
+        "standard_name": "platform_yaw_angle",
+        "valid_range": [
+          0.0,
+          360.0
+        ],
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "TRK": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree",
+        "long_name": "track angle",
+        "valid_range": [
+          0.0,
+          360.0
+        ],
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "DriftAngle": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree",
+        "long_name": "drift angle",
+        "valid_range": [
+          -180.0,
+          180.0
+        ],
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "PITCH": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree",
+        "long_name": "pitch angle",
+        "standard_name": "platform_pitch_angle",
+        "valid_range": [
+          -180.0,
+          180.0
+        ],
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "ROLL": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree",
+        "long_name": "roll angle",
+        "standard_name": "platform_roll_angle",
+        "valid_range": [
+          -180.0,
+          180.0
+        ],
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "PotentialTemp_Nav": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "K",
+        "long_name": "potential temperature",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "Dewpoint": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "K",
+        "long_name": "dew point",
+        "standard_name": "dew_point_temperature",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "TotalAirTemp": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "K",
+        "long_name": "total air temperature",
+        "standard_name": "air_temperature",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CabinPressure": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "hPa",
+        "long_name": "cabin pressure",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "SolarZenithAngle": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree",
+        "long_name": "solar zenith angle",
+        "standard_name": "solar_zenith_angle",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "AircraftSunElevation": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree",
+        "long_name": "aircraft sun elevation",
+        "standard_name": "solar_elevation_angle",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "SunAzimuth": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree",
+        "long_name": "sun azimuth",
+        "standard_name": "solar_azimuth_angle",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "AircraftSunAzimuth": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "degree",
+        "long_name": "aircraft sun azimuth",
+        "standard_name": "platform_azimuth_angle",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "H2O_MixingRatio_Nav": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "g kg-1",
+        "long_name": "H2O mixing ratio",
+        "standard_name": "humidity_mixing_ratio",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "H2O_VaporPressure_Nav": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "hPa",
+        "long_name": "H2O vapor pressure",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "H2O_SatVaporPressureWater_Nav": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "hPa",
+        "long_name": "H2O sat vapor pressure water",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "H2O_SatVaporPressureIce_Nav": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "hPa",
+        "long_name": "H2O sat vapor pressure ice",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "H2O_RelativeHumidity_Nav": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "percent",
+        "long_name": "relative humidity",
+        "standard_name": "relative_humidity",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "ManeuverFlag": {
+      "datatype": "int32",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999,
+        "long_name": "data flag for sampling based on aircraft maneuver",
+        "valid_range": [
+          0,
+          7
+        ],
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "flag_meanings": "on_ground take_off in-line_ascent in-line_descent spiral_up spiral_down constant_alt_legs landing",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "GroundElevation-AMSL_GoogleMaps": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m",
+        "long_name": "ground elevation above mean sea level from Google Maps API",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "Altitude-AGL_GoogleMaps": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m",
+        "long_name": "Aircraft altitude above ground level from Google Maps API",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "GroundHeight-AMSL_CPL": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m",
+        "long_name": "derived ground height above MSL",
+        "comment": "only used with CPL data",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "MLH-AMSL_CPL": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "m",
+        "long_name": "derived mixed layer height in ASL",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "O3_MoleFraction": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-9",
+        "long_name": "ozone mole fraction in parts per billion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CO2_DryMoleFrac_PICARRO": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-6",
+        "long_name": "Carbon dioxide dry mole fraction in parts per million",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CH4_DryMoleFrac_PICARRO": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-6",
+        "long_name": "Methane dry mole fraction in parts per million",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CO_DryMoleFrac_PICARRO": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-6",
+        "long_name": "Carbon monoxide dry mole fraction in parts per million",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CO2_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-6",
+        "long_name": "carbon dioxide mole fraction in parts per million",
+        "standard_name": "mole_fraction_of_carbon_dioxide_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CH4_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-9",
+        "long_name": "methane mole fraction in parts per billion",
+        "standard_name": "mole_fraction_of_methane_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CO_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-9",
+        "long_name": "carbon monoxide mole fraction in parts per billion",
+        "standard_name": "mole_fraction_of_carbon_monoxide_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "N2O_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-9",
+        "long_name": "nitrous oxide mole fraction in parts per billion",
+        "standard_name": "mole_fraction_of_nitrous_oxide_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "SF6_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "sulfur hexafloride mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "H2_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-9",
+        "long_name": "hydrogen mole fraction in parts per billion",
+        "standard_name": "mole_fraction_of_molecular_hydrogen_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CH4C13_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-3",
+        "long_name": "C-13 of CH4 mole fraction per mil",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CO2C14_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-3",
+        "long_name": "C-14 of CO2 mole fraction per mil",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F11B_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "F11 mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_cfc11_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "FC12_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "FC12 mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F13_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "F13 mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F113_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "CFC113 mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_cfc113_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F115_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "CFC115 mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_cfc115_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "HF133a_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "HF133a mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F23_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "fluoroform mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F32_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "F32 mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F134A_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "Tetrafluoroethane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F152A_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "1-1-difluoroethane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F125_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "pentafluoroethane mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_cfc115_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F143a_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "1-1-1-trifluoroethane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F227e_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "F227 mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F365m_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "pentafluorobutane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "H1211_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "halon 1211 mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_halon1211_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "H1301_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "halon 1301 mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_halon1301_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "H2402_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "halon 2402 mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_halon2402_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "MCFA_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "methyl chloroform mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CF4_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "carbon tetrafloride mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "C2F6_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "hexafluorethane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "SO2F2_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "sulfuryl fluoride mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "MEBR_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "methyl bromide mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_methyl_bromide_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CH3I_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "methyl iodide mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "DIBR_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "dibromomethane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "OCS_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "carbonyl sulfide mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "MECL_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "methyl chloride mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_methyl_chloride_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "DICL_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "dimethyl chloride mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CHLF_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "chloroform mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "PCE_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "perchloroethylene mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "C2H2_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "acetylene mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_ethyne_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "C2H6_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "ethane mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_ethane_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "C3H8_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "propane mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_propane_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "nC4H10_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "neoButane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "iC4H10_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "isoButane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "nC5H12_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "neoPentane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "iC5H12_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "isoPentane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "BENZ_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "benzene mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_benzene_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "TOL_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "toluene mole fraction in parts per trillion",
+        "standard_name": "mole_fraction_of_toluene_in_air",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "CH2BrCl_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "bromochloromethane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "F236fa_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "F236fa mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "TCE_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "trichloroethylene mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "P218_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "P218 mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "nC6H14_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "n-Hexane mole fraction in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    },
+    "HF22_MoleFraction_PFP": {
+      "datatype": "float64",
+      "dimensions": [
+        "time"
+      ],
+      "attributes": {
+        "_FillValue": -999999.0,
+        "units": "1e-12",
+        "long_name": "HF22 in parts per trillion",
+        "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+      }
+    }
+  },
+  "attributes": {
+    "title": "Merged data file for ACT-AMERICA 2016, Flight 01 (20160718), on the c130 platform. Data is merged to 05 seconds.",
+    "mission_name": "ACTAmerica - 2016 Summer Campaign",
+    "flight_date": "2016-07-18",
+    "platform": "NASA C-130 Aircraft",
+    "location": "Latitude, Longitude, and Altitude included in data records",
+    "associated_data": "N/A",
+    "instrument_info": "N/A",
+    "data_info": "Please see PI data file for explanation of ULOD and LLOD.",
+    "uncertainty": "See individual files for uncertainty information.",
+    "ulod_flag": "-777777",
+    "ulod_value": "N/A",
+    "llod_flag": "-888888",
+    "llod_value": "N/A",
+    "project_info": "ACT-America",
+    "comments": "This merge was created using data in the NASA ACT-AMERICA archive as of 08/21/2018. In most cases, variable names have been kept identical to those submitted in the raw data files. However, in some cases, names have been changed  (e.g., to eliminate duplication)  Units have been standardized throughout the merge. Contact michael.shook@nasa.gov with any questions as to which data was included.",
+    "ancillary_file_source": "ACTAMERICA-mrg05-c130_merge_20160718_R3.ict ",
+    "revision": "R3; R3: Includes data submitted as of 08/21/2018. See the readme file for a more detailed changelog.; R2: Includes data submitted as of 10/15/2017.; R1: Includes data submitted as of 06/26/2017.; R0: Includes data submitted as of 01/20/2017.; ",
+    "featureType": "trajectory",
+    "id": "10.3334/ORNLDAAC/1593",
+    "naming_authority": "ORNL DAAC",
+    "institution": "Oak Ridge National Laboratory (ORNL) Distributed Active Archive Center (DAAC)",
+    "creator_url": "https://daac.ornl.gov",
+    "creator_email": "uso@daac.ornl.gov",
+    "citation": "Davis, K.J., M.D. Obland, B. Lin, T. Lauvaux, C. O'dell, B. Meadows, E.V. Browell, J.H. Crawford, J.P. Digangi, C. Sweeney, M.J. McGill, J. Dobler, J.D. Barrick, and A.R. Nehrir. 2018. ACT-America: L3 Merged In Situ Atmospheric Trace Gases and Flask Data, Eastern USA. ORNL DAAC, Oak Ridge, Tennessee, USA. https://doi.org/10.3334/ORNLDAAC/1593",
+    "summary": "This dataset provides three merged data products acquired during flights over the central and eastern United States as part of the Atmospheric Carbon and Transport - America (ACT-America) project. Two aircraft platforms, the NASA Langley Beechcraft B200 King Air and the NASA Goddard Space Flight Center's C-130H Hercules, were used to collect high-quality in situ measurements across a variety of continental surfaces and atmospheric conditions. The merged data products are composed of continuous in situ measurements of atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), ozone (O3), and ethane (C2H6, B200 aircraft only) that were averaged to uniform intervals and merged with trace gas concentrations from discrete flask samples collected with the Programmable Flask Package (PFP) and the aircraft navigation and meteorological variables. These merged data products provide integrated measurements at intervals useful to the modeling community for studying the transport and fluxes of atmospheric carbon dioxide and methane across North America.",
+    "keywords": [
+      "atmosphere > atmospheric chemistry > carbon and hydrocarbon compounds > carbon dioxide",
+      "atmosphere > atmospheric chemistry > carbon and hydrocarbon compounds > carbon monoxide",
+      "atmosphere > atmospheric chemistry > halocarbons and halogens",
+      "atmosphere > atmospheric chemistry > trace gases/trace species",
+      "atmosphere > atmospheric chemistry > carbon and hydrocarbon compounds",
+      "atmosphere > atmospheric chemistry > carbon and hydrocarbon compounds > methane",
+      "atmosphere > atmospheric chemistry > oxygen compounds > ozone"
+    ],
+    "keywords_vocabulary": "GCMD Science Keywords",
+    "stipulations_on_use": "Data available with no restrictions.",
+    "Conventions": "CF-1.6"
+  },
+  "dimensions": {
+    "nv": {
+      "UNLIMITED": false,
+      "size": 2
+    },
+    "time": {
+      "UNLIMITED": false,
+      "size": 3470
+    },
+    "flight_strlen": {
+      "UNLIMITED": false,
+      "size": 14
+    }
+  }
+}

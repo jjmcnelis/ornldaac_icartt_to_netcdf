@@ -1,0 +1,9 @@
+{
+  "dimensions": [
+    "time",
+    "nv"
+  ],
+  "attributes": {
+    "long_name": "boundary (start and end time) of each time step"
+  }
+}

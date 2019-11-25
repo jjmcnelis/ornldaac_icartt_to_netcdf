@@ -1,0 +1,12 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "percent",
+    "long_name": "relative humidity",
+    "standard_name": "relative_humidity",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

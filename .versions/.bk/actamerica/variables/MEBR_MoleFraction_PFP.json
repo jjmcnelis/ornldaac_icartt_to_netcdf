@@ -1,0 +1,12 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "1e-12",
+    "long_name": "methyl bromide mole fraction in parts per trillion",
+    "standard_name": "mole_fraction_of_methyl_bromide_in_air",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

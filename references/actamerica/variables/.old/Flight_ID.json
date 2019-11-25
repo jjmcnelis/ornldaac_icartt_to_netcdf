@@ -1,0 +1,10 @@
+{
+  "datatype": "S1",
+  "dimensions": [
+    "flight_strlen"
+  ],
+  "attributes": {
+    "cf_role": "trajectory_id",
+    "long_name": "flight id"
+  }
+}

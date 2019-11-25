@@ -1,0 +1,6 @@
+{
+  "name": "AircraftSunElevation",
+  "units": "degs",
+  "scale": 1.0,
+  "fill": -999999.0
+}

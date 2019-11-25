@@ -1,0 +1,12 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "m",
+    "long_name": "pressure altitude",
+    "standard_name": "barometric_altitude",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

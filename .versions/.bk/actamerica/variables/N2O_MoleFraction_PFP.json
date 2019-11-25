@@ -1,0 +1,12 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "1e-9",
+    "long_name": "nitrous oxide mole fraction in parts per billion",
+    "standard_name": "mole_fraction_of_nitrous_oxide_in_air",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

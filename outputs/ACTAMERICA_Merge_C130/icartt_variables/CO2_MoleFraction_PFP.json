@@ -1,0 +1,6 @@
+{
+  "name": "CO2_MoleFraction_PFP",
+  "units": "ppm",
+  "scale": 1.0,
+  "fill": -999999.0
+}

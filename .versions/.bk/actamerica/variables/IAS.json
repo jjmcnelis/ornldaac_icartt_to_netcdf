@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "m s-1",
+    "long_name": "indicated air speed",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

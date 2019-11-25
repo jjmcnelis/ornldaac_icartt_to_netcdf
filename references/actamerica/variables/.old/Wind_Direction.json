@@ -1,0 +1,11 @@
+{
+  "datatype": "float64",
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "degree",
+    "long_name": "wind direction"
+  }
+}

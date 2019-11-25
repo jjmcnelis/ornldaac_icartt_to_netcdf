@@ -1,0 +1,17 @@
+CARVE:
+  DIR_ICARTT: /data/carve/
+  DIR_OUTPUT: .outputs/carve/
+  CSV_VARIABLES: resources/carve/CSV_VARIABLES.csv
+  JSON_NETCDF: resources/carve/JSON_NETCDF.json
+
+ACTAMERICA: 
+  DIR_ICARTT: /data/actamerica/
+  DIR_OUTPUT: .outputs/actamerica/
+  CSV_VARIABLES: resources/actamerica/CSV_VARIABLES.csv
+  JSON_NETCDF: resources/actamerica/JSON_NETCDF.json
+
+ATOM:
+  DIR_ICARTT: /data/atom/
+  DIR_OUTPUT: .outputs/atom/
+  CSV_VARIABLES: resources/atom/CSV_VARIABLES.csv
+  JSON_NETCDF: resources/atom/JSON_NETCDF.json

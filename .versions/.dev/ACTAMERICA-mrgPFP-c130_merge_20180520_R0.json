@@ -1,0 +1,18 @@
+{
+  "header_length": 147,
+  "header_index": 146,
+  "pi_last_name": "Shook",
+  "pi_first_name": "Michael",
+  "pi_organization": "NASA Chemistry and Dynamics Branch, NASA Langley Research Center",
+  "data_source_description": "Merged data file for ACT-AMERICA 2018, Flight 17 (20180520), on the c130 platform. Data is merged to PFP file timeline.",
+  "mission_name": "NASA ACT-AMERICA 2018",
+  "file_volume_number": "1",
+  "file_volume_count": "1",
+  "utc_start": "2018-05-20",
+  "utc_stop": "2018-10-16",
+  "interval": [
+    "0"
+  ],
+  "revision_id": "R0",
+  "revision_description": "Includes data submitted as of 10/12/2018. See the readme file for a more detailed changelog."
+}

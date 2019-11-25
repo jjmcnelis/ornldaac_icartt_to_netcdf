@@ -1,0 +1,12 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "K",
+    "long_name": "dew point",
+    "standard_name": "dew_point_temperature",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

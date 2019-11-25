@@ -1,0 +1,6 @@
+{
+  "name": "H2O_VolMixingRatio_PICARRO",
+  "units": "%",
+  "scale": 1.0,
+  "fill": -999999.0
+}

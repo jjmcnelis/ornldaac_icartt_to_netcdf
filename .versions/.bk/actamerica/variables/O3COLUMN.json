@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "1",
+    "long_name": "O3 Column",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

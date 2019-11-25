@@ -1,0 +1,6 @@
+{
+  "name": "CH4_DryMoleFrac_PICARRO",
+  "units": "ppm",
+  "scale": 1.0,
+  "fill": -999999.0
+}

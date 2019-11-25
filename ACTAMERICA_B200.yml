@@ -1,0 +1,8 @@
+DIR_ICARTT: /data/actamerica/ACTAMERICA_Merge/data/ict/b200/
+DIR_OUTPUT: outputs/ACTAMERICA_Merge_B200/
+VARIABLES: references/actamerica/VARIABLES_B200.csv
+STRUCTURE: references/actamerica/STRUCTURE_B200.json
+OVERWRITE: false
+RESOURCES:
+  ICARTT_HEADERS: icartt_headers/
+  ICARTT_VARIABLES: icartt_variables/

@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "K",
+    "long_name": "static air temperature",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

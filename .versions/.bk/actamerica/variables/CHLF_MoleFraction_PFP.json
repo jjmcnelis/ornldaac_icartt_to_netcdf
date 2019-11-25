@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "1e-12",
+    "long_name": "chloroform mole fraction in parts per trillion",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}

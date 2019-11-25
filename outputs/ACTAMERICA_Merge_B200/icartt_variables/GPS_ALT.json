@@ -1,0 +1,6 @@
+{
+  "name": "GPS_ALT",
+  "units": "km",
+  "scale": 1.0,
+  "fill": -999999.0
+}

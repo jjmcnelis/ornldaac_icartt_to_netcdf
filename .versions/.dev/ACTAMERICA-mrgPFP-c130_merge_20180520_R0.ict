@@ -1,0 +1,156 @@
+147, 1001
+Shook, Michael
+NASA Chemistry and Dynamics Branch, NASA Langley Research Center
+Merged data file for ACT-AMERICA 2018, Flight 17 (20180520), on the c130 platform. Data is merged to PFP file timeline.
+NASA ACT-AMERICA 2018
+1, 1
+2018, 05, 20, 2018, 10, 16
+0
+STARTTIME,s
+108
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+-999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999, -999999
+STOPTIME, s
+UTC, s
+JDAY, days
+INDEX, none
+FLIGHT, none
+LOCAL_SUN_TIME, hour
+LATITUDE, degs
+LONGITUDE, degs
+ALTP, km
+PRESSURE, hPa
+TEMPERATURE, K
+THETA, K, calculated from ambient temperature and pressure
+O3COLUMN, DU, OMI ozone column data extracted along flight track
+SZA, deg
+WNS, m s-1
+WND, Degs
+GPS_ALT, km
+Radar_ALT, km
+GRD_SPD, m s-1
+TAS, m/s
+IAS, m/s
+MachNumber, mach
+VerticalSpeed, m s-1
+HDG, degs
+TRK, degs
+DriftAngle, degs
+PITCH, degs
+ROLL, degs
+PotentialTemp_Nav, K
+Dewpoint_Nav, K
+TotalAirTemp, K
+CabinPressure, hPa
+SolarZenithAngle, degs
+AircraftSunElevation, degs
+SunAzimuth, degs
+AircraftSunAzimuth, degs
+H2O_MixingRatio_Nav, g kg-1
+H2O_VaporPressure_Nav, hPa
+H2O_SatVaporPressureWater_Nav, hPa
+H2O_SatVaporPressureIce_Nav, hPa
+H2O_RelativeHumidity_Nav, %
+ManeuverFlag, none
+H2O_VolMixingRatio_PICARRO, %
+H2O_MassMixingRatio_PICARRO, g kg-1
+H2O_VaporPressure_PICARRO, hPa
+RHi_PICARRO, %
+RHw_PICARRO, %
+Dewpoint_PICARRO, K
+GroundElevation-AMSL_GoogleMaps, km
+Altitude-AGL_GoogleMaps, km
+GroundHeight-AMSL_CPL, km
+MLH-AMSL_CPL, km
+O3_MixingRatio, ppbv
+CO2_DryMoleFrac_PICARRO, ppm
+CH4_DryMoleFrac_PICARRO, ppm
+CO_DryMoleFrac_PICARRO, ppm
+CO2_MoleFraction_PFP, ppm
+CH4_MoleFraction_PFP, ppb
+CO_MoleFraction_PFP, ppb
+N2O_MoleFraction_PFP, ppb
+SF6_CCGG_MoleFraction_PFP, ppt
+H2_MoleFraction_PFP, ppb
+CH4C13_MoleFraction_PFP, permil
+CO2C14_MoleFraction_PFP, permil
+F11B_MoleFraction_PFP, ppt
+FC12_MoleFraction_PFP, ppt
+F13_MoleFraction_PFP, ppt
+F113_MoleFraction_PFP, ppt
+F115_MoleFraction_PFP, ppt
+HF133a_MoleFraction_PFP, ppt
+F23_MoleFraction_PFP, ppt
+F32_MoleFraction_PFP, ppt
+F134A_MoleFraction_PFP, ppt
+F152A_MoleFraction_PFP, ppt
+F125_MoleFraction_PFP, ppt
+F143a_MoleFraction_PFP, ppt
+F227e_MoleFraction_PFP, ppt
+F365m_MoleFraction_PFP, ppt
+H1211_MoleFraction_PFP, ppt
+H1301_MoleFraction_PFP, ppt
+H2402_MoleFraction_PFP, ppt
+MCFA_MoleFraction_PFP, ppt
+CF4_MoleFraction_PFP, ppt
+C2F6_MoleFraction_PFP, ppt
+SO2F2_MoleFraction_PFP, ppt
+MEBR_MoleFraction_PFP, ppt
+CH3I_MoleFraction_PFP, ppt
+DIBR_MoleFraction_PFP, ppt
+OCS_MoleFraction_PFP, ppt
+MECL_MoleFraction_PFP, ppt
+DICL_MoleFraction_PFP, ppt
+CHLF_MoleFraction_PFP, ppt
+PCE_MoleFraction_PFP, ppt
+C2H2_MoleFraction_PFP, ppt
+C2H6_MoleFraction_PFP, ppt
+C3H8_MoleFraction_PFP, ppt
+nC4H10_MoleFraction_PFP, ppt
+iC4H10_MoleFraction_PFP, ppt
+nC5H12_MoleFraction_PFP, ppt
+iC5H12_MoleFraction_PFP, ppt
+BENZ_MoleFraction_PFP, ppt
+TOL_MoleFraction_PFP, ppt
+CH2BrCl_MoleFraction_PFP, ppt
+F236fa_MoleFraction_PFP, ppt
+TCE_MoleFraction_PFP, ppt
+P218_MoleFraction_PFP, ppt
+nC6H14_MoleFraction_PFP, ppt
+HF22_MoleFraction_PFP, ppt
+0
+25
+PI_CONTACT_INFO: michael.shook@nasa.gov,gao.chen@nasa.gov
+PLATFORM: NASA C-130 Aircraft
+LOCATION:  Latitude, Longitude, and Altitude included in data records
+ASSOCIATED_DATA: N/A
+INSTRUMENT_INFO: N/A
+DATA_INFO: Please see PI data file for explanation of ULOD and LLOD.
+UNCERTAINTY: See individual files for uncertainty information.
+ULOD_FLAG: -777777
+ULOD_VALUE: N/A
+LLOD_FLAG: -888888
+LLOD_VALUE: N/A
+DM_CONTACT_INFO: gao.chen@nasa.gov
+PROJECT_INFO: N/A
+STIPULATIONS_ON_USE: N/A
+OTHER_COMMENTS: This merge was created using data in the NASA ACT-AMERICA archive
+ as of 10/12/2018.
+ In most cases, variable names have been kept identical
+ to those submitted in the raw data files.
+ However, in some cases, names have been changed 
+ (e.g., to eliminate duplication) 
+ Units have been standardized throughout the merge.
+ Contact michael.shook@nasa.gov with any questions as to which data was included.
+REVISION: R0
+R0: Includes data submitted as of 10/12/2018. See the readme file for a more detailed changelog.
+ STARTTIME, STOPTIME, UTC, JDAY, INDEX, FLIGHT, LOCAL_SUN_TIME, LATITUDE, LONGITUDE, ALTP, PRESSURE, TEMPERATURE, THETA, O3COLUMN, SZA, WNS, WND, GPS_ALT, Radar_ALT, GRD_SPD, TAS, IAS, MachNumber, VerticalSpeed, HDG, TRK, DriftAngle, PITCH, ROLL, PotentialTemp_Nav, Dewpoint_Nav, TotalAirTemp, CabinPressure, SolarZenithAngle, AircraftSunElevation, SunAzimuth, AircraftSunAzimuth, H2O_MixingRatio_Nav, H2O_VaporPressure_Nav, H2O_SatVaporPressureWater_Nav, H2O_SatVaporPressureIce_Nav, H2O_RelativeHumidity_Nav, ManeuverFlag, H2O_VolMixingRatio_PICARRO, H2O_MassMixingRatio_PICARRO, H2O_VaporPressure_PICARRO, RHi_PICARRO, RHw_PICARRO, Dewpoint_PICARRO, GroundElevation-AMSL_GoogleMaps, Altitude-AGL_GoogleMaps, GroundHeight-AMSL_CPL, MLH-AMSL_CPL, O3_MixingRatio, CO2_DryMoleFrac_PICARRO, CH4_DryMoleFrac_PICARRO, CO_DryMoleFrac_PICARRO, CO2_MoleFraction_PFP, CH4_MoleFraction_PFP, CO_MoleFraction_PFP, N2O_MoleFraction_PFP, SF6_CCGG_MoleFraction_PFP, H2_MoleFraction_PFP, CH4C13_MoleFraction_PFP, CO2C14_MoleFraction_PFP, F11B_MoleFraction_PFP, FC12_MoleFraction_PFP, F13_MoleFraction_PFP, F113_MoleFraction_PFP, F115_MoleFraction_PFP, HF133a_MoleFraction_PFP, F23_MoleFraction_PFP, F32_MoleFraction_PFP, F134A_MoleFraction_PFP, F152A_MoleFraction_PFP, F125_MoleFraction_PFP, F143a_MoleFraction_PFP, F227e_MoleFraction_PFP, F365m_MoleFraction_PFP, H1211_MoleFraction_PFP, H1301_MoleFraction_PFP, H2402_MoleFraction_PFP, MCFA_MoleFraction_PFP, CF4_MoleFraction_PFP, C2F6_MoleFraction_PFP, SO2F2_MoleFraction_PFP, MEBR_MoleFraction_PFP, CH3I_MoleFraction_PFP, DIBR_MoleFraction_PFP, OCS_MoleFraction_PFP, MECL_MoleFraction_PFP, DICL_MoleFraction_PFP, CHLF_MoleFraction_PFP, PCE_MoleFraction_PFP, C2H2_MoleFraction_PFP, C2H6_MoleFraction_PFP, C3H8_MoleFraction_PFP, nC4H10_MoleFraction_PFP, iC4H10_MoleFraction_PFP, nC5H12_MoleFraction_PFP, iC5H12_MoleFraction_PFP, BENZ_MoleFraction_PFP, TOL_MoleFraction_PFP, CH2BrCl_MoleFraction_PFP, F236fa_MoleFraction_PFP, TCE_MoleFraction_PFP, P218_MoleFraction_PFP, nC6H14_MoleFraction_PFP, HF22_MoleFraction_PFP
+62477,   62492,   62484.5,   140,          1700001.0,         17.000000,  12.42585653,   39.95784785,   286.0357646,   2.148230427,   780.3066667,   283.5233272,   304.3477785,   310,   20.77046914,    -999999,   -999999,  2.239066667,   2.238166748,   146.2133333,   135.4451928,   120.361812,   0.4,   0.1466666667,   37.67333333,   42.23333333,   -4.553333333,   1.42,   7.353333333,   304.3733333,   279.2099939,   292.6566606,   943.9333333,   20.79333333,   71.54666667,   -161.2466667,   13.59333333,   8.083333333,   9.484666667,   12.71,   14.064,   74.62466667,    -999999,  1.198,   7.435896667,   9.359736667,    -999999,  77.23266667,   279.1589939,   0,   2.239066667,   0.0989218,   0.98934,   53.27333333,   413.508,   1.928976471,   0.1203851852,   413.79,   1929.63,   117.73,   330.43,   9.73,   543.27,   -47.48,   2.92,   231.24,   510.23,   3.41,   69.88,   8.66,   0.56,   31.7,   22.41,   119.03,   17.5,   30.4,   23.53,   1.48,   1.12,   3.56,   3.3,   0.38,   1.99,   85.25,   5.92,   2.38,   7.29,   0.38,   0.88,   536.13,   581.57,   62.54,   12.14,   83.27,   106.98,   2149.95,   489.87,   89.54,   47.74,   21.61,   28.17,   20.48,    -999999,  0.25,   0.15,   62.71,   0.61,   9.34,          259.13000  
+64601,   64616,   64608.5,   140,          1700002.0,         17.000000,  13.06026265,   41.99703445,   286.7018565,   2.468168831,   749.7133333,   280.8099939,   304.8995479,   310,   25.84817639,   9.78911396,   282.5272997,   2.535533333,   2.077090106,   136.12,   139.1628792,   121.9119912,   0.412,   0.5,   353.4866667,   357.6733333,   -4.16,   1.546666667,   -0.26,   304.9133333,   278.6833272,   290.4499939,   908.6,   26,   65.16666667,   -142.5066667,   -133.52,   8.112666667,   9.146666667,   10.57933333,   11.406,   86.446,    -999999,  1.2018,   7.459365217,   9.027373913,    -999999,  90.00869565,   278.6360809,   0.42464,   2.110893333,    -999999,   -999999,  53.12,   413.7817647,   1.924232353,   0.1088611111,   413.99,   1926.61,   116.31,   331.07,   9.83,   542.53,   -47.49,   3.96,   230.66,   509.46,   3.32,   69.05,   8.66,   0.54,   31.97,   23.05,   120.76,   17.94,   31.19,   24.01,   1.48,   1.2,   3.32,   3.43,   0.39,   1.94,   84.91,   5.92,   2.56,   7.28,   0.34,   0.89,   531.11,   584.41,   64.28,   12.42,   77.23,   109.79,   1786.84,   370.11,   59.22,   31.12,   14.92,   21.27,   20.57,    -999999,  0.22,   0.21,   51.22,   0.66,   6.06,          260.98000  
+68261,   68276,   68268.5,   140,          1700003.0,         17.000000,  14.07283586,   42.57817993,   286.6404546,   1.221740015,   874.7533333,   286.0433272,   297.1911923,   319,   34.57541569,   12.80428776,   306.9519977,   1.259533333,   0.9448190517,   131.7466667,   124.4636136,   116.3217432,   0.37,   0.09333333333,   182.8,   178.3866667,   4.42,   1.173333333,   -0.1733333333,   297.1933333,   283.0366606,   293.7766606,   975.7333333,   34.8,   54.2,   -120.28,   56.02666667,   9.364666667,   12.308,   15.02866667,   17.03933333,   81.90466667,    -999999,  1.371207407,   8.510888889,   11.99664074,    -999999,  84.39222222,   282.7985124,   0.3099733333,   0.94956,    -999999,   -999999,  40.61333333,   424.565,   1.983205714,   0.1505518519,   424.89,   1983,   148.42,   332.27,   10.01,   536.75,   -47.59,   -1.4,   234.75,   512.85,   3.37,   70.37,   8.7,   0.52,   31.65,   29.72,   145.81,   42.23,   37.25,   28.45,   1.63,   1.79,   3.55,   3.55,   0.41,   1.99,   85.82,   5.88,   2.68,   7.59,   0.56,   1.05,   501.81,   571.17,   79.79,   16.92,   62.48,   232.26,   2395.06,   717.79,   189.44,   89.68,   57.67,   78.51,   54.09,    -999999,  0.24,   0.21,   35.46,   0.7,   20.1,          279.21000  
+69652,   69667,   69659.5,   140,          1700004.0,         17.000000,  14.48671797,   41.09152755,   287.0528529,   0.3023412837,   977.4333333,   295.9499939,   297.8863339,   310,   38.03857231,   12.76391047,   267.43698,   0.3182666667,   0.3108553638,   123.5,   118.8767952,   115.268856,   0.3426666667,   -0.04666666667,   157.84,   152.5133333,   5.313333333,   1.466666667,   0.12,   297.8866667,   289.7233272,   302.9499939,   1006.8,   38.32,   51.58,   -111.6,   89.00666667,   12.98866667,   19.036,   28.00666667,   34.88266667,   67.97533333,    -999999,  1.870433333,   11.60945556,   18.27583333,    -999999,  69.08518519,   289.224068,   0,   0.3182666667,    -999999,   -999999,  47.22666667,   418.438,   1.9748,   0.1456672727,   418.61,   1975.14,   150.78,   332.8,   9.91,   542.16,   -47.55,   -0.35,   232.95,   512.43,   3.32,   70.9,   8.79,   0.56,   31.71,   29.09,   139.78,   36.89,   35.93,   26.72,   1.52,   1.54,   3.57,   3.38,   0.43,   2.1,   85.92,   5.83,   2.61,   7.73,   0.81,   0.92,   481.6,   580.18,   69.93,   15.8,   56.61,   221.57,   2450.03,   820.48,   226.25,   101.38,   77.55,   111.16,   50.31,    -999999,  0.29,   0.25,   29.34,   0.62,   28.61,          275.27000  
+70481,   70496,   70488.5,   140,          1700005.0,         17.000000,  14.70856476,   40.50069454,   286.926388,   0.3045764838,   977.1733333,   296.1499939,   298.1103012,   305,   40.19355026,   13.43964014,   269.8004932,   0.3264666667,   0.323291204,   104.7733333,   116.915064,   113.3002656,   0.34,   -0.02666666667,   248.0133333,   245.3333333,   2.666666667,   1.473333333,   0.01333333333,   298.1266667,   288.9633272,   302.9499939,   1004.333333,   40.5,   47.82,   -107.7,   4.413333333,   12.39533333,   18.16666667,   28.39933333,   35.45066667,   63.96866667,    -999999,  1.793373077,   11.13132692,   17.51477308,    -999999,  65.40653846,   288.5607631,   0,   0.3264666667,    -999999,   -999999,  54.86,   418.8914286,   1.997644118,   0.1436745455,   419.29,   1993.67,   147.21,   332.73,   9.88,   550.61,   -47.69,   -3.18,   233.21,   512.38,   3.38,   69.98,   11.25,   0.52,   32.23,   28.59,   143.93,   53.14,   35.91,   26.94,   1.63,   1.32,   3.42,   3.42,   0.41,   2.34,   85.38,   5.89,   2.66,   7.55,   0.68,   0.98,   491.54,   576.89,   72.02,   15.23,   53.51,   216.86,   2426.33,   726.87,   275.57,   110.27,   142.69,   216.36,   50.65,    -999999,  0.27,   0.2,   29.26,   0.59,   39.73,          281.26000  
+72684,   72699,   72691.5,   140,          1700006.0,         17.000000,  15.22127526,   40.41793645,   285.4378789,   0.3037230438,   977.26,   296.6766606,   298.6328868,   313,   45.82084855,   7.179446546,   285.7340487,   0.3347333333,   0.2689961633,   118.82,   112.9401576,   109.352796,   0.3266666667,   1.426666667,   137.9733333,   136.1933333,   1.76,   1.733333333,   0.86,   298.64,   288.6233272,   303.0233272,   977.4666667,   46.15333333,   45.26,   -101.1,   120.16,   12.11,   17.75333333,   29.29466667,   36.748,   60.59666667,    -999999,  1.745665517,   10.83523793,   17.04777586,    -999999,  61.50137931,   288.1372353,   0.06050666667,   0.2742266667,    -999999,   -999999,  45.41333333,   418.284,   1.97873125,   0.1417563636,   418.53,   1978.89,   144.44,   333.01,   9.82,   539.58,   -47.54,   -0.17,   233.42,   511.77,   3.39,   70.51,   8.63,   0.56,   31.82,   25.32,   135.53,   31.41,   33.72,   26.39,   1.57,   1.3,   3.49,   3.43,   0.39,   2.03,   85.49,   5.73,   2.65,   7.53,   0.59,   0.97,   485.3,   574.56,   70.15,   15.02,   51.92,   206.35,   2689.33,   765.5,   214.3,   100.29,   78.81,   110.14,   48.21,    -999999,  0.27,   0.19,   28.3,   0.63,   29.81,          269.04000  
+74069,   74084,   74076.5,   140,          1700007.0,         17.000000,  15.60848358,   39.30693131,   285.4751704,   0.2925876836,   978.5666667,   297.4166606,   299.263496,   311,   50.04859257,   10.38933346,   247.769197,   0.3290666667,   0.326156324,   108.3333333,   118.5989976,   114.771564,   0.34,   0.2,   241.6533333,   241.0933333,   0.5866666667,   1.333333333,   0.08,   299.28,   290.7566606,   304.4099939,   968,   50.4,   38.17333333,   -95.8,   22.26,   13.86533333,   20.334,   30.61866667,   38.67466667,   66.41866667,    -999999,  2.002492,   12.429152,   19.586724,    -999999,  67.562,   290.3123939,   0,   0.3290666667,    -999999,   -999999,  49.86,   415.3128571,   1.953624242,   0.1420471698,   415.44,   1954.3,   139.61,   333.95,   9.81,   542.79,   -47.59,   0.37,   232.95,   512.18,   3.31,   69.97,   8.78,   0.56,   32.26,   26.91,   131.49,   25.02,   34.37,   25.69,   1.47,   1.2,   3.36,   3.41,   0.37,   2.18,   85.5,   5.82,   2.51,   7.32,   0.76,   1.05,   495.77,   588.75,   67.01,   14.37,   46.35,   162.08,   2192.32,   619.29,   160.83,   72.92,   53.75,   81.59,   33.77,    -999999,  0.27,   0.19,   26.69,   0.61,   21.3,          271.74000  
+75780,   75795,   75787.5,   140,          1700008.0,         17.000000,  15.98408888,   39.67987264,   283.9800832,   2.583484832,   738.92,   280.7099939,   306.0564033,   313,   54.4115791,   13.12173901,   281.7006651,   2.7038,   2.578608032,   118.8133333,   129.98184,   113.0156088,   0.3886666667,   -0.01333333333,   314.0866667,   317.5666667,   -3.486666667,   1.28,   0.01333333333,   306.0866667,   275.8499939,   289.1366606,   943.4,   54.76666667,   34.13333333,   -92.28666667,   -45.54,   6.752666667,   7.511333333,   10.52066667,   11.33066667,   71.38733333,    -999999,  0.9992,   6.201945455,   7.390772727,    -999999,  74.27636364,   275.7863575,   0.1185466667,   2.585253333,   0.1862228,   1.249166667,   58,   415.052,   1.932359375,   0.1247962264,   414.74,   1931.43,   117.74,   331.81,   9.83,   536.41,   -47.47,   4.38,   231.5,   511.15,   3.36,   69.87,   8.86,   0.58,   31.83,   20.93,   118.08,   17.24,   29.84,   23.73,   1.49,   1.3,   3.46,   3.38,   0.39,   2.02,   85.29,   5.83,   2.45,   7.34,   0.28,   0.82,   523.8,   580.85,   67.43,   13.28,   53.41,   114.84,   2130.03,   536.98,   121.8,   57.13,   28.59,   35.36,   26.74,    -999999,  0.2,   0.21,   28.84,   0.62,   10.59,          259.44000  
+77516,   77531,   77523.5,   140,          1700009.0,         17.000000,  16.49401855,   39.12178523,   284.395695,   0.2879547236,   979.0866667,   297.8699939,   299.6741548,   313,   60.31837782,   8.522456843,   250.9580169,   0.3276,   0.3082340838,   117,   118.2045936,   114.3394344,   0.34,   -0.22,   171.5933333,   167.78,   3.806666667,   1.04,   -0.2533333333,   299.6866667,   290.1166606,   304.8099939,   1000,   60.68,   29.08666667,   -87.08,   100.9,   13.29266667,   19.512,   31.46666667,   39.91533333,   62.02066667,    -999999,  1.917544,   11.902068,   18.764892,    -999999,  63.1504,   289.6367939,   0.01654,   0.31106,    -999999,   -999999,  55.68666667,   414.6753846,   1.95305,   0.1469203704,   414.65,   1962.31,   148.63,   332.99,   9.75,   544.73,   -47.56,   -0.21,   232.11,   512.18,   3.37,   71.11,   8.7,   0.6,   31.84,   29.64,   137.31,   29.35,   35.57,   26.46,   1.5,   1.21,   3.56,   3.39,   0.42,   2.14,   85.33,   5.84,   2.61,   7.4,   0.6,   0.87,   492.02,   584.24,   67.81,   14.69,   49,   191.25,   2389.76,   674.56,   194.33,   80.04,   62.07,   99.68,   37.98,    -999999,  0.3,   0.29,   25.1,   0.61,   24.74,          276.38000  

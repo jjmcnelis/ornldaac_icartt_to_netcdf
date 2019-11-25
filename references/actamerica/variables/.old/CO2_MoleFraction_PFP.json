@@ -1,0 +1,13 @@
+{
+  "datatype": "float64",
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "1e-6",
+    "long_name": "carbon dioxide mole fraction in parts per million",
+    "standard_name": "mole_fraction_of_carbon_dioxide_in_air",
+    "coordinates": "time LATITUDE LONGITUDE GPS_ALT"
+  }
+}
