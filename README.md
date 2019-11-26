@@ -1,8 +1,32 @@
-# EVS support services: ICARTT to netCDF
+# EVS ICARTT to netCDF4
 
 ## quick start
 
-Create/edit a configuration YAML file to point at the ICARTT input directory (`DIR_ICARTT`, see below) and the output directory. Then pass it as the only argument to the module as `__main__`:
+**Requirements:** Python 3
+* **NumPy:** https://numpy.org/
+* **Pandas:** https://pandas.pydata.org/
+* **netCDF4:** https://unidata.github.io/netcdf4-python/netCDF4/index.html
+
+**Create/edit configuration YAML file** (e.g. [`ACTAMERICA_B200.yml`](ACTAMERICA_B200.yml)) to point at the ICARTT input directory ([`DIR_ICARTT`](inputs/ACTAMERICA_Merge/B200/), see below) and the output directory ([`DIR_OUTPUT`](outputs/ACTAMERICA_Merge_B200/):
+
+```yaml
+# Path to some input ICARTT files. Will crawl recursively.
+DIR_ICARTT: inputs/ACTAMERICA_Merge/B200/
+# Path to write output resource files and netCDFs.
+DIR_OUTPUT: outputs/ACTAMERICA_Merge_B200/
+# Path to variable reference table, maps ICARTT<>netCDF<>CF.json names.
+VARIABLES: references/actamerica/VARIABLES_B200.csv
+# Path to JSON representation of netCDF output structure.
+STRUCTURE: references/actamerica/STRUCTURE_B200.json
+# Paths within resources subdirectory of DIR_OUTPUT (no need to change).
+RESOURCES:
+  # Parsed header + helpful info from each ICARTT file are written here.
+  ICARTT_HEADERS: icartt_headers/
+  # Variable reference parsed from ICARTT headers are written here.
+  ICARTT_VARIABLES: icartt_variables/
+```
+
+Then pass it as the only argument to the module as `__main__`:
 
 ```python
 python -m ornldaac_icartt_to_netcdf [CONFIG].yml
@@ -33,7 +57,7 @@ The code is described line by line in the `_utils.py` and `__main__.py` scripts.
 Example: *`ACTAMERICA_B200.yml`*
 
 ```yaml
-DIR_ICARTT: /data/actamerica/ACTAMERICA_Merge/data/ict/b200/
+DIR_ICARTT: inputs/ACTAMERICA_Merge/B200/
 DIR_OUTPUT: outputs/ACTAMERICA_Merge_B200/
 VARIABLES: references/actamerica/VARIABLES_B200.csv
 STRUCTURE: references/actamerica/STRUCTURE_B200.json
@@ -42,7 +66,7 @@ RESOURCES:
   ICARTT_VARIABLES: icartt_variables/
 ```
 
-* `DIR_ICARTT`: */data/actamerica/ACTAMERICA_Merge/data/ict/b200/*
+* `DIR_ICARTT`: *inputs/ACTAMERICA_Merge/B200/*
 
 Path to the directory containing the input ICARTT files.
 
@@ -52,7 +76,7 @@ Path to the output directory where resource files (ICARTT header and variable me
 
 * `VARIABLES`: *references/actamerica/VARIABLES_B200.csv*
 
-Variable table maps the input ICARTT variable names (`ICARTT_NAME`) to the output netCDF variable names (`NETCDF_NAME`) and, most importantly, to the JSON reference file (`VARIABLE_MAP`). This table needs to be carefully maintained. The script loops over all of the variables in the ICARTT file, compares them against this table, and writes the data to the output netCDF using the `NETCDF_NAME`, and the dimensions/attributes given in the variable reference file (which are located here: *`references/actamerica/variables/[AIRCRAFT]/[VARIABLE].json`*).
+Variable table maps the input ICARTT variable names (`ICARTT_NAME`) to the output netCDF variable names (`OUTPUT_NAME`) and, most importantly, to the JSON reference file (`VARIABLE_MAP`). This table needs to be carefully maintained. The script loops over all of the variables in the ICARTT file, compares them against this table, and writes the data to the output netCDF using the `OUTPUT_NAME`, and the dimensions/attributes given in the variable reference file (which are located here: *`references/actamerica/variables/[AIRCRAFT]/[VARIABLE].json`*).
 
 * `STRUCTURE`: *references/actamerica/STRUCTURE_B200.json*
 
@@ -66,11 +90,11 @@ The script loops over the ICARTTs in the directory specified by  `DIR_ICARTT`, p
 
 #### 3. validate input variables against reference variables as they are written to netCDF
 
-The script will then attempt to match every unique variable name from the input ICARTT files to a reference JSON file (`VARIABLE_MAP` in `VARIABLES` CSV file) and output variable name (`NETCDF_NAME` in `VARIABLES` CSV file). Any variables that are not represented in the table will not be written to the output netCDF files.
+The script will then attempt to match every unique variable name from the input ICARTT files to a reference JSON file (`VARIABLE_MAP`) and output variable name (`OUTPUT_NAME`). Any variables that are not represented in the table will not be written to the output netCDF files.
 
 Looping over the ICARTTs, multileg flights are paired and concatenated, and the ICARTT data are translated into netCDF files.
 
-Each variable in the ICARTT is written to the output netCDF with the attributes given in the matching variable reference JSON; e.g. *references/actamerica/variables/B200/AircraftSunAzimuth.json*:
+Each variable in the ICARTT is written to the output netCDF with the attributes given in the matching variable reference JSON; e.g. *[references/actamerica/variables/B200/AircraftSunAzimuth.json](references/actamerica/variables/B200/AircraftSunAzimuth.json)*:
 
 ```json
 {
@@ -89,11 +113,9 @@ Each variable in the ICARTT is written to the output netCDF with the attributes 
 ```
 The output variable is assigned the type specified in `datatype` field, the dimensions given in the `dimensions` field, and the attributes given in the `attributes` field. 
 
-Any variables that cannot be matched to one of these JSON files WILL NOT be written to the output netCDF. Any variables that are skipped will be printed to stdout to clue you in:
+Any variables that cannot be matched to one of these JSON files WILL NOT be written to the output netCDF. Any variables that are skipped will be printed to stdout to clue you in. `INDEX` is deliberately excluded:
 
 ```shell
  - [ 85 / 85 ] ACTAMERICA-mrg05-c130_merge_20160803_R3.ict 
    WARN: 'INDEX' has no reference. Skip
 ```
-
-I still need to resolve the missing reference files for the variables listed above for the C130 files.

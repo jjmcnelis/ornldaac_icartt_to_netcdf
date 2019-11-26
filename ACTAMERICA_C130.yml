@@ -2,7 +2,6 @@ DIR_ICARTT: inputs/ACTAMERICA_Merge/C130/
 DIR_OUTPUT: outputs/ACTAMERICA_Merge_C130/
 VARIABLES: references/actamerica/VARIABLES_C130.csv
 STRUCTURE: references/actamerica/STRUCTURE_C130.json
-OVERWRITE: false
 RESOURCES:
   ICARTT_HEADERS: icartt_headers/
   ICARTT_VARIABLES: icartt_variables/
