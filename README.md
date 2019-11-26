@@ -52,15 +52,11 @@ As long as you have place the ICARTTs in an accessible folder and the full path 
 
 ### what
 
-This repo makes public the ORNL DAAC workflow to translate ICARTT data files from the EVS missions into archive ready netCDF data sets. 
-
-This is a total rewrite as of 2019-11-22, so expect some bugs. Please email mcnelisjj@ornl.gov if you find any.
+This script translates ICARTT files into archive ready netCDFs. 
 
 ### why
 
-The ORNL DAAC requires netCDF data sets to be self-describing according to the CF conventions (as much as is reasonable) because we feel it increases the longevity of the data and it provides conveniences to data users in ways that the people reading this readme will I'm sure understand.
-
-Public code allows investigators in active projects to reformat their data as needed.
+The ORNL DAAC requires netCDF data sets to be self-describing according to CF conventions (as much as is reasonable) because they feel it increases the longevity of data and provides conveniences to data users in ways that the people reading this will I'm sure understand.
 
 ### how
 
@@ -90,21 +86,21 @@ Path to the output directory where resource files (ICARTT header and variable me
 
 * `VARIABLES`: *references/actamerica/VARIABLES_B200.csv*
 
-Variable table maps the input ICARTT variable names (`ICARTT_NAME`) to the output netCDF variable names (`OUTPUT_NAME`) and, most importantly, to the JSON reference file (`VARIABLE_MAP`). This table needs to be carefully maintained. The script loops over all of the variables in the ICARTT file, compares them against this table, and writes the data to the output netCDF using the `OUTPUT_NAME`, and the dimensions/attributes given in the variable reference file (which are located here: *`references/actamerica/variables/[AIRCRAFT]/[VARIABLE].json`*).
+Variable table maps the input ICARTT variable names (`ICARTT_NAME`) to the output netCDF variable names (`OUTPUT_NAME`) and, most importantly, to the JSON reference file (`VARIABLE_MAP`).
 
 * `STRUCTURE`: *references/actamerica/STRUCTURE_B200.json*
 
-Path to the JSON representation of the output netCDF structure (the ORNL DAAC copies are located: *`references/actamerica/STRUCTURE_[AIRCRAFT].json`*). NOTE: The only information sourced from this file are the *dimensions* and *global attributes* that are written to the output netCDF files.
+Path to the JSON representation of the output netCDF structure (the ORNL DAAC copies are located: *`references/actamerica/STRUCTURE_[AIRCRAFT].json`*). 
 
-* `RESOURCES`: Don't worry about these. Every time you run the script, the input ICARTTs will be parsed and their headers and variable metadata will be written to "resource" files in these subdirectories in `DIR_OUTPUT`. These are compared against the reference files as the netCDFs are being written and warnings are printed when a match is not found.
+* `RESOURCES`: Don't worry about these. Input ICARTTs are parsed and their headers and variable metadata will be written to JSON and CSV files in these subdirectories in `DIR_OUTPUT`. The files are compared against the reference files as the netCDFs are being written and warnings are printed when a match is not found.
 
 #### 2. loop over input ICARTT files and write resource files.
 
-The script loops over the ICARTTs in the directory specified by  `DIR_ICARTT`, parses the header and variable metadata, and writes them to JSONs and CSVs in `RESOURCES` subdirectories within the `DIR_OUTPUT` directory.
+The script loops over the ICARTTs in the directory specified by  `DIR_ICARTT`, parses the header and variable metadata, and writes to JSONs and CSVs.
 
 #### 3. validate input variables against reference variables as they are written to netCDF
 
-The script will then attempt to match every unique variable name from the input ICARTT files to a reference JSON file (`VARIABLE_MAP`) and output variable name (`OUTPUT_NAME`). Any variables that are not represented in the table will not be written to the output netCDF files.
+The script attempts to match every unique variable name from the input ICARTT files to a reference JSON file (`VARIABLE_MAP`) and output variable name (`OUTPUT_NAME`). Any variables that are not represented in the table will not be written to the output netCDF files.
 
 Looping over the ICARTTs, multileg flights are paired and concatenated, and the ICARTT data are translated into netCDF files.
 
@@ -125,6 +121,7 @@ Each variable in the ICARTT is written to the output netCDF with the attributes 
   }
 }
 ```
+
 The output variable is assigned the type specified in `datatype` field, the dimensions given in the `dimensions` field, and the attributes given in the `attributes` field. 
 
 Any variables that cannot be matched to one of these JSON files WILL NOT be written to the output netCDF. Any variables that are skipped will be printed to stdout to clue you in. `INDEX` is deliberately excluded:
