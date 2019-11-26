@@ -89,20 +89,11 @@ Each variable in the ICARTT is written to the output netCDF with the attributes 
 ```
 The output variable is assigned the type specified in `datatype` field, the dimensions given in the `dimensions` field, and the attributes given in the `attributes` field. 
 
-Any variables that cannot be matched to one of these JSON files WILL NOT be written to the output netCDF. Any variables that are skipped will be printed to stdout with a message to try to give you some clues:
+Any variables that cannot be matched to one of these JSON files WILL NOT be written to the output netCDF. Any variables that are skipped will be printed to stdout to clue you in:
 
 ```shell
  - [ 85 / 85 ] ACTAMERICA-mrg05-c130_merge_20160803_R3.ict 
    WARN: 'INDEX' has no reference. Skip
-   WARN: 'WNS' not in variables table. Skip
-   WARN: 'WND' not in variables table. Skip
-   WARN: 'H2O_MixingRatio_Nav' has no reference. Skip
-   WARN: 'Altitude-AGL_GoogleMaps' not in variables table. Skip
-   WARN: 'GroundHeight-AMSL_CPL' has no reference. Skip
-   WARN: 'MLH-AMSL_CPL' has no reference. Skip
-   WARN: 'O3_MoleFraction' not in variables table. Skip
-   WARN: 'DICL_MoleFraction_PFP' not in variables table. Skip
-   WARN: 'C2H6_MoleFraction_PFP' not in variables table. Skip
 ```
 
 I still need to resolve the missing reference files for the variables listed above for the C130 files.
