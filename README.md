@@ -3,36 +3,50 @@
 ## quick start
 
 **Requirements:** Python 3
-* **NumPy:** https://numpy.org/
-* **Pandas:** https://pandas.pydata.org/
-* **netCDF4:** https://unidata.github.io/netcdf4-python/netCDF4/index.html
 
-**Create/edit configuration YAML file** (e.g. [`ACTAMERICA_B200.yml`](ACTAMERICA_B200.yml)) to point at the ICARTT input directory ([`DIR_ICARTT`](inputs/ACTAMERICA_Merge/B200/), see below) and the output directory ([`DIR_OUTPUT`](outputs/ACTAMERICA_Merge_B200/):
+* `numpy`: https://numpy.org/
+* `pandas`: https://pandas.pydata.org/
+* `netCDF4`: https://unidata.github.io/netcdf4-python/netCDF4/index.html
+
+**Create/edit configuration YAML file** (e.g. [`ACTAMERICA_B200.yml`](ACTAMERICA_B200.yml)) 
+
+Point it at the ICARTT input directory ([`DIR_ICARTT`](inputs/ACTAMERICA_Merge/B200/)) and the output directory ([`DIR_OUTPUT`](outputs/ACTAMERICA_Merge_B200/)):
 
 ```yaml
 # Path to some input ICARTT files. Will crawl recursively.
 DIR_ICARTT: inputs/ACTAMERICA_Merge/B200/
+
 # Path to write output resource files and netCDFs.
 DIR_OUTPUT: outputs/ACTAMERICA_Merge_B200/
+
 # Path to variable reference table, maps ICARTT<>netCDF<>CF.json names.
 VARIABLES: references/actamerica/VARIABLES_B200.csv
+
 # Path to JSON representation of netCDF output structure.
 STRUCTURE: references/actamerica/STRUCTURE_B200.json
+
 # Paths within resources subdirectory of DIR_OUTPUT (no need to change).
 RESOURCES:
-  # Parsed header + helpful info from each ICARTT file are written here.
-  ICARTT_HEADERS: icartt_headers/
-  # Variable reference parsed from ICARTT headers are written here.
-  ICARTT_VARIABLES: icartt_variables/
+
+    # Parsed header + helpful info from each ICARTT file are written here.
+    ICARTT_HEADERS: icartt_headers/
+
+    # Variable reference parsed from ICARTT headers are written here.
+    ICARTT_VARIABLES: icartt_variables/
 ```
 
-Then pass it as the only argument to the module as `__main__`:
+Then pass the configuration file as the only argument to the `ornldaac_icartt_to_netcdf` module (to [`ornldaac_icartt_to_netcdf/__main__.py`](ornldaac_icartt_to_netcdf/__main__.py)):
 
 ```python
 python -m ornldaac_icartt_to_netcdf [CONFIG].yml
 ```
 
 As long as you have place the ICARTTs in an accessible folder and the full path is given in the `CONFIG.yml` file, everything should be good. I will refine this soon.
+
+**to do**
+
+* fill value replacement -- `OUTPUT_FILL` column has no affect for now
+* user function -- `USER_FUNC` will add soon
 
 ## overview
 
