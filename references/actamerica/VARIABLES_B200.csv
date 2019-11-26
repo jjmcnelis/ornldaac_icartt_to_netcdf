@@ -1,7 +1,7 @@
 VARIABLE_MAP,NETCDF_NAME,ICARTT_NAME,ICARTT_UNITS,ICARTT_SCALE,ICARTT_FILL,BOOL_INCLUDE,USERFUNC
 references/actamerica/variables/B200/AircraftSunAzimuth.json,AircraftSunAzimuth,AircraftSunAzimuth,degs,1,-999999,1,NULL
 references/actamerica/variables/B200/AircraftSunElevation.json,AircraftSunElevation,AircraftSunElevation,degs,1,-999999,1,NULL
-references/actamerica/variables/B200/Altitude-AGL_GoogleMaps.json,Altitude_AGL,Altitude_AGL,km,1,-999999,1,NULL
+references/actamerica/variables/B200/Altitude_AGL.json,Altitude_AGL,Altitude_AGL,km,1,-999999,1,NULL
 references/actamerica/variables/B200/Altitude_AGL.json,Altitude_AGL,Altitude-AGL_GoogleMaps,km,1,-999999,1,NULL
 references/actamerica/variables/B200/ALTP.json,ALTP,ALTP,km,1,-999999,1,NULL
 references/actamerica/variables/B200/BENZ_MoleFraction_PFP.json,BENZ_MoleFraction_PFP,BENZ_MoleFraction_PFP,ppt,1,-999999,1,NULL
@@ -58,9 +58,9 @@ references/actamerica/variables/B200/H1211_MoleFraction_PFP.json,H1211_MoleFract
 references/actamerica/variables/B200/H1301_MoleFraction_PFP.json,H1301_MoleFraction_PFP,H1301_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/B200/H2_MoleFraction_PFP.json,H2_MoleFraction_PFP,H2_MoleFraction_PFP,ppb,1,-999999,1,NULL
 references/actamerica/variables/B200/H2402_MoleFraction_PFP.json,H2402_MoleFraction_PFP,H2402_MoleFraction_PFP,ppt,1,-999999,1,NULL
-,,H2O_MixingRatio,g kg-1,1,-999999,1,NULL
+references/actamerica/variables/B200/H2O_MixingRatio_Nav.json,H2O_MixingRatio_Nav,H2O_MixingRatio,g kg-1,1,-999999,1,NULL
 references/actamerica/variables/B200/H2O_MixingRatio_Nav.json,H2O_MixingRatio_Nav,H2O_MixingRatio_Nav,g kg-1,1,-999999,1,NULL
-,,H2O_RelativeHumidity,%,1,-999999,1,NULL
+references/actamerica/variables/B200/H2O_RelativeHumidity_Nav.json,H2O_RelativeHumidity_Nav,H2O_RelativeHumidity,%,1,-999999,1,NULL
 references/actamerica/variables/B200/H2O_RelativeHumidity_Nav.json,H2O_RelativeHumidity_Nav,H2O_RelativeHumidity_Nav,%,1,-999999,1,NULL
 references/actamerica/variables/B200/H2O_SatVaporPressureIce_Nav.json,H2O_SatVaporPressureIce_Nav,H2O_SatVaporPressureIce,hPa,1,-999999,1,NULL
 references/actamerica/variables/B200/H2O_SatVaporPressureIce_Nav.json,H2O_SatVaporPressureIce_Nav,H2O_SatVaporPressureIce_Nav,hPa,1,-999999,1,NULL
@@ -89,7 +89,7 @@ references/actamerica/variables/B200/nC4H10_MoleFraction_PFP.json,nC4H10_MoleFra
 references/actamerica/variables/B200/nC5H12_MoleFraction_PFP.json,nC5H12_MoleFraction_PFP,nC5H12_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/B200/nC6H14_MoleFraction_PFP.json,nC6H14_MoleFraction_PFP,nC6H14_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/B200/O3_MixingRatio.json,O3_MixingRatio,O3_MixingRatio,ppbv,1,-999999,1,NULL
-references/actamerica/variables/B200/O3_MixingRatio.json,O3_MixingRatio,O3_MoleFraction,ppb,1,-999999,1,NULL
+references/actamerica/variables/B200/O3_MoleFraction.json,O3_MixingRatio,O3_MoleFraction,ppb,1,-999999,1,NULL
 references/actamerica/variables/B200/O3COLUMN.json,O3COLUMN,O3COLUMN,DU,1,-999999,1,NULL
 references/actamerica/variables/B200/OCS_MoleFraction_PFP.json,OCS_MoleFraction_PFP,OCS_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/B200/P218_MoleFraction_PFP.json,P218_MoleFraction_PFP,P218_MoleFraction_PFP,ppt,1,-999999,1,NULL

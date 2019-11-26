@@ -1,0 +1,14 @@
+{
+    "name": "WarmColdAirFlag",
+    "datatype": "int32",
+    "dimensions": [
+      "time"
+    ],
+    "attributes": {
+      "long_name": "Flag indicating whether aircraft is in warm or cold air, or fair conditions.",
+      "coordinates": "time LATITUDE LONGITUDE GPS_ALT",
+      "flag_meanings": "fair cold warm",
+      "flag_values": [0, 1, 2],
+      "valid_range": [0, 2]
+    }
+}

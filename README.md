@@ -1,22 +1,34 @@
 # EVS support services: ICARTT to netCDF
 
-## what
+## quick start
+
+Create/edit a configuration YAML file to point at the ICARTT input directory (`DIR_ICARTT`, see below) and the output directory. Then pass it as the only argument to the module as `__main__`:
+
+```python
+python -m ornldaac_icartt_to_netcdf [CONFIG].yml
+```
+
+As long as you have place the ICARTTs in an accessible folder and the full path is given in the `CONFIG.yml` file, everything should be good. I will refine this soon.
+
+## overview
+
+### what
 
 This repo makes public the ORNL DAAC workflow to translate ICARTT data files from the EVS missions into archive ready netCDF data sets. 
 
 This is a total rewrite as of 2019-11-22, so expect some bugs. Please email mcnelisjj@ornl.gov if you find any.
 
-## why
+### why
 
 The ORNL DAAC requires netCDF data sets to be self-describing according to the CF conventions (as much as is reasonable) because we feel it increases the longevity of the data and it provides conveniences to data users in ways that the people reading this readme will I'm sure understand.
 
 Public code allows investigators in active projects to reformat their data as needed.
 
-## how
+### how
 
-The code is described line by line. To summarize:
+The code is described line by line in the `_utils.py` and `__main__.py` scripts. To summarize:
 
-### 1. read and validate config file
+#### 1. read and validate config file
 
 Example: *`ACTAMERICA_B200.yml`*
 
@@ -48,11 +60,11 @@ Path to the JSON representation of the output netCDF structure (the ORNL DAAC co
 
 * `RESOURCES`: Don't worry about these. Every time you run the script, the input ICARTTs will be parsed and their headers and variable metadata will be written to "resource" files in these subdirectories in `DIR_OUTPUT`. These are compared against the reference files as the netCDFs are being written and warnings are printed when a match is not found.
 
-### 2. loop over input ICARTT files and write resource files.
+#### 2. loop over input ICARTT files and write resource files.
 
 The script loops over the ICARTTs in the directory specified by  `DIR_ICARTT`, parses the header and variable metadata, and writes them to JSONs and CSVs in `RESOURCES` subdirectories within the `DIR_OUTPUT` directory.
 
-### 3. validate input variables against reference variables as they are written to netCDF
+#### 3. validate input variables against reference variables as they are written to netCDF
 
 The script will then attempt to match every unique variable name from the input ICARTT files to a reference JSON file (`VARIABLE_MAP` in `VARIABLES` CSV file) and output variable name (`NETCDF_NAME` in `VARIABLES` CSV file). Any variables that are not represented in the table will not be written to the output netCDF files.
 

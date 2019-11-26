@@ -1,0 +1,14 @@
+{
+    "name": "ManeuverFlagQC",
+    "datatype": "int32",
+    "dimensions": [
+      "time"
+    ],
+    "attributes": {
+      "long_name": "Low or average confidence in ManeuverFlag",
+      "coordinates": "time LATITUDE LONGITUDE GPS_ALT",
+      "flag_meanings": "low_confidence average_confidence",
+      "flag_values": [0, 1],
+      "valid_range": [0, 1]
+    }
+}

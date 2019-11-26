@@ -7,7 +7,7 @@ references/actamerica/variables/C130/ALTP.json,ALTP,ALTP,km,1,-999999,1,NULL
 references/actamerica/variables/C130/BENZ_MoleFraction_PFP.json,BENZ_MoleFraction_PFP,BENZ_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/C2F6_MoleFraction_PFP.json,C2F6_MoleFraction_PFP,C2F6_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/C2H2_MoleFraction_PFP.json,C2H2_MoleFraction_PFP,C2H2_MoleFraction_PFP,ppt,1,-999999,1,NULL
-references/actamerica/variables/C130/C2H6_MixingRatio_CAMS2.json,C2H6_MixingRatio_CAMS2,C2H6_MoleFraction_PFP,ppt,1,-999999,1,NULL
+references/actamerica/variables/C130/C2H6_MoleFraction_PFP.json,C2H6_MoleFraction_PFP,C2H6_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/C3H8_MoleFraction_PFP.json,C3H8_MoleFraction_PFP,C3H8_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/CabinPressure.json,CabinPressure,CabinPressure,hPa,1,-999999,1,NULL
 references/actamerica/variables/C130/CF4_MoleFraction_PFP.json,CF4_MoleFraction_PFP,CF4_MoleFraction_PFP,ppt,1,-999999,1,NULL
@@ -30,8 +30,8 @@ references/actamerica/variables/C130/CO2C14_MoleFraction_PFP.json,CO2C14_MoleFra
 references/actamerica/variables/C130/Dewpoint.json,Dewpoint,Dewpoint,K,1,-999999,1,NULL
 references/actamerica/variables/C130/Dewpoint.json,Dewpoint,Dewpoint_Nav,K,1,-999999,1,NULL
 references/actamerica/variables/C130/DIBR_MoleFraction_PFP.json,DIBR_MoleFraction_PFP,Dewpoint_PICARRO,K,1,-999999,1,NULL
-references/actamerica/variables/C130/DICL_MoleFraction_PFP.json,DICL_MoleFraction_PFP,DIBR_MoleFraction_PFP,ppt,1,-999999,1,NULL
-references/actamerica/variables/C130/DifferentialPressure.json,DifferentialPressure,DICL_MoleFraction_PFP,ppt,1,-999999,1,NULL
+references/actamerica/variables/C130/DIBR_MoleFraction_PFP.json,DIBR_MoleFraction_PFP,DIBR_MoleFraction_PFP,ppt,1,-999999,1,NULL
+references/actamerica/variables/C130/DICL_MoleFraction_PFP.json,DICL_MoleFraction_PFP,DICL_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/DriftAngle.json,DriftAngle,DriftAngle,degs,1,-999999,1,NULL
 references/actamerica/variables/C130/F113_MoleFraction_PFP.json,F113_MoleFraction_PFP,F113_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/F115_MoleFraction_PFP.json,F115_MoleFraction_PFP,F115_MoleFraction_PFP,ppt,1,-999999,1,NULL
@@ -58,10 +58,10 @@ references/actamerica/variables/C130/H1211_MoleFraction_PFP.json,H1211_MoleFract
 references/actamerica/variables/C130/H1301_MoleFraction_PFP.json,H1301_MoleFraction_PFP,H1301_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/H2_MoleFraction_PFP.json,H2_MoleFraction_PFP,H2_MoleFraction_PFP,ppb,1,-999999,1,NULL
 references/actamerica/variables/C130/H2402_MoleFraction_PFP.json,H2402_MoleFraction_PFP,H2402_MoleFraction_PFP,ppt,1,-999999,1,NULL
-references/actamerica/variables/C130/H2O_MixingRatio_Nav.json,H2O_MixingRatio_Nav,H2O_MassMixingRatio_PICARRO,g kg-1,1,-999999,1,NULL
-,,H2O_MixingRatio,g kg-1,1,-999999,1,NULL
-,,H2O_MixingRatio_Nav,g kg-1,1,-999999,1,NULL
-,,H2O_RelativeHumidity,%,1,-999999,1,NULL
+references/actamerica/variables/C130/H2O_MixingRatio_Nav.json,H2O_MixingRatio,H2O_MassMixingRatio_PICARRO,g kg-1,1,-999999,1,NULL
+references/actamerica/variables/C130/H2O_MixingRatio_Nav.json,H2O_MixingRatio,H2O_MixingRatio,g kg-1,1,-999999,1,NULL
+references/actamerica/variables/C130/H2O_MixingRatio_Nav.json,H2O_MixingRatio,H2O_MixingRatio_Nav,g kg-1,1,-999999,1,NULL
+references/actamerica/variables/C130/H2O_RelativeHumidity_Nav.json,H2O_RelativeHumidity_Nav,H2O_RelativeHumidity,%,1,-999999,1,NULL
 references/actamerica/variables/C130/H2O_RelativeHumidity_Nav.json,H2O_RelativeHumidity_Nav,H2O_RelativeHumidity_Nav,%,1,-999999,1,NULL
 references/actamerica/variables/C130/H2O_SatVaporPressureIce_Nav.json,H2O_SatVaporPressureIce_Nav,H2O_SatVaporPressureIce,hPa,1,-999999,1,NULL
 references/actamerica/variables/C130/H2O_SatVaporPressureIce_Nav.json,H2O_SatVaporPressureIce_Nav,H2O_SatVaporPressureIce_Nav,hPa,1,-999999,1,NULL
@@ -88,13 +88,13 @@ references/actamerica/variables/C130/MCFA_MoleFraction_PFP.json,MCFA_MoleFractio
 references/actamerica/variables/C130/MEBR_MoleFraction_PFP.json,MEBR_MoleFraction_PFP,MEBR_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/MECL_MoleFraction_PFP.json,MECL_MoleFraction_PFP,MECL_MoleFraction_PFP,ppt,1,-999999,1,NULL
 ,,MLH_CPL,km,1,-999999,1,NULL
-,,MLH-AMSL_CPL,km,1,-999999,1,NULL
+references/actamerica/variables/C130/MLH-AMSL_CPL.json,MLH-AMSL_CPL,MLH-AMSL_CPL,km,1,-999999,1,NULL
 references/actamerica/variables/C130/N2O_MoleFraction_PFP.json,N2O_MoleFraction_PFP,N2O_MoleFraction_PFP,ppb,1,-999999,1,NULL
 references/actamerica/variables/C130/nC4H10_MoleFraction_PFP.json,nC4H10_MoleFraction_PFP,nC4H10_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/nC5H12_MoleFraction_PFP.json,nC5H12_MoleFraction_PFP,nC5H12_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/nC6H14_MoleFraction_PFP.json,nC6H14_MoleFraction_PFP,nC6H14_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/O3_MixingRatio.json,O3_MixingRatio,O3_MixingRatio,ppbv,1,-999999,1,NULL
-references/actamerica/variables/C130/O3_MixingRatio.json,O3_MixingRatio,O3_MoleFraction,ppb,1,-999999,1,NULL
+references/actamerica/variables/C130/O3_MoleFraction.json,O3_MixingRatio,O3_MoleFraction,ppb,1,-999999,1,NULL
 references/actamerica/variables/C130/O3COLUMN.json,O3COLUMN,O3COLUMN,DU,1,-999999,1,NULL
 references/actamerica/variables/C130/OCS_MoleFraction_PFP.json,OCS_MoleFraction_PFP,OCS_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/P218_MoleFraction_PFP.json,P218_MoleFraction_PFP,P218_MoleFraction_PFP,ppt,1,-999999,1,NULL
@@ -104,8 +104,8 @@ references/actamerica/variables/C130/PotentialTemp_Nav.json,PotentialTemp,Potent
 references/actamerica/variables/C130/PotentialTemp_Nav.json,PotentialTemp,PotentialTemp_Nav,K,1,-999999,1,NULL
 references/actamerica/variables/C130/PRESSURE.json,PRESSURE,PRESSURE,hPa,1,-999999,1,NULL
 ,,Radar_ALT,km,1,-999999,1,NULL
-,,RHi_PICARRO,%,1,-999999,1,NULL
-,,RHw_PICARRO,%,1,-999999,1,NULL
+references/actamerica/variables/C130/H2O_SatVaporPressureIce_Nav.json,RHi_PICARRO,RHi_PICARRO,%,1,-999999,1,NULL
+references/actamerica/variables/C130/H2O_SatVaporPressureWater_Nav.json,RHw_PICARRO,RHw_PICARRO,%,1,-999999,1,NULL
 references/actamerica/variables/C130/ROLL.json,ROLL,ROLL,degs,1,-999999,1,NULL
 references/actamerica/variables/C130/SF6_MoleFraction_PFP.json,SF6_MoleFraction_PFP,SF6_CCGG_MoleFraction_PFP,ppt,1,-999999,1,NULL
 references/actamerica/variables/C130/SO2F2_MoleFraction_PFP.json,SO2F2_MoleFraction_PFP,SO2F2_MoleFraction_PFP,ppt,1,-999999,1,NULL

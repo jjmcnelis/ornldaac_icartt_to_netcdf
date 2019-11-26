@@ -1,4 +1,4 @@
-DIR_ICARTT: /data/actamerica/ACTAMERICA_Merge/data/ict/c130/
+DIR_ICARTT: inputs/ACTAMERICA_Merge/C130/
 DIR_OUTPUT: outputs/ACTAMERICA_Merge_C130/
 VARIABLES: references/actamerica/VARIABLES_C130.csv
 STRUCTURE: references/actamerica/STRUCTURE_C130.json

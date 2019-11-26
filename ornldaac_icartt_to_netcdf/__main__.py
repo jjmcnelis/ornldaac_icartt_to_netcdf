@@ -384,6 +384,55 @@ def _parse_flight(icartt):
     # Strip the leading/trailing white spaces from final merged tables.
     flight_data.columns = [c.strip() for c in list(flight_data.columns)]
 
+
+    ### SPECIAL ACT-AMERICA ROUTINE -------------------------------------------
+
+    # This special routine exists because the science team wants ot merge
+    # some custom metadata flags with the merge ICARTT data set.
+    
+    _temp = icartt[0] if type(icartt) is list else icartt
+    _tail = _temp.split("_merge_")[1].split("_R")[0]
+
+    if "b200" in _temp:
+        _flag = glob("inputs/ACTAMERICA_metadata_flags/B200/*{}*".format(_tail))
+        if len(_flag)==1:
+            _flag_table = parse_icartt_table(_flag[0])
+        elif len(_flag)==2:
+            _flag_table = _parse_icartt_table_multileg(_flag)
+        else:
+            print("\n\nESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!\n\n")
+            _flag_table = None
+    if "c130" in _temp:
+        _flag = glob("inputs/ACTAMERICA_metadata_flags/C130/*{}*".format(_tail))
+        if len(_flag)==1:
+            _flag_table = parse_icartt_table(_flag[0])
+        elif len(_flag)==2:
+            _flag_table = _parse_icartt_table_multileg(_flag)
+        else:
+            print("\n\nESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!\n\n")
+            _flag_table = None
+
+    if _flag_table is not None:
+        
+        # Strip the leading/trailing white spaces from final merged tables.
+        _flag_table.columns = [c.strip() for c in list(_flag_table.columns)]
+
+        # If the index sizes match.
+        if _flag_table.index.size==flight_data.index.size:
+
+            # Loop over the flag variables.
+            for _flag_var in ['Flight_flag', 
+                              'Air_flag', 
+                              'BL_FT_flag', 
+                              'Maneuver_flag', 
+                              'Maneuver_flagQC']:
+
+                # Add the flag variables to the larger dataset.
+                flight_data[_flag_var] = _flag_table[_flag_var]
+
+    ### SPECIAL ACT-AMERICA ROUTINE -------------------------------------------
+
+
     # Return the parsed table.
     return flight_data
 
@@ -459,7 +508,8 @@ def write_netcdf(
             
             # If this is a duplicate variable, skip it.
             if name in list(ds.variables):
-                print("   WARN: '{}' is duplicate variable! Skip".format(name))
+                print(("   WARN: variable '{}' is duplicate variable!"
+                       " Skipping.").format(name))
                 continue
 
             # Select the reference variable row for the currernt variable.
@@ -475,12 +525,15 @@ def write_netcdf(
 
                  # If the reference is None, skip over this iterated variable.
                 if var_ref is None:
-                    print("   WARN: '{}' has no reference. Skip".format(name))
+                    print(("   WARN: variable '{}' has no JSON reference."
+                           " Skipping.").format(name))
                     continue
             
             # If exception is raised, notify user and skip this variable.
-            except:
-                print("   WARN: '{}' not in variables table. Skip".format(name))
+            except Exception as e:
+                # print(e)
+                print(("   WARN: variable '{}' is not in variables table."
+                       " Skipping.").format(name))
                 continue
             
             # IF no exception is raised, write the variable.
@@ -521,6 +574,61 @@ def write_netcdf(
                         np.array(list(flight_datestring), dtype='S1'))
                 else:
                     x[:] = flight_data[name].to_numpy()
+
+
+        ### SPECIAL ACT-AMERICA ROUTINE ---------------------------------------
+
+        # This special routine exists because the science team wants ot merge
+        # some custom metadata flags with the merge ICARTT data set.
+
+        # Loop over the flag variables.
+        for _flagv in [
+            'Flight_flag',
+            'Air_flag',
+            'BL_FT_flag',
+            'Maneuver_flag',
+            'Maneuver_flagQC',
+        ]:
+
+            # Read the flag JSON config.
+            flag_config = read_netcdf_file_structure(
+                'references/actamerica/special/{}.json'.format(_flagv))
+
+            # Replace serialized lists with tuples.
+            for flag_key, flag_value in flag_config['attributes'].items():
+                
+                # If the type of the value is list, replace with tuple.
+                if type(flag_value) is list:
+                    flag_config['attributes'][flag_key] = tuple(flag_value)
+            
+            # If the flag variable name is in parsed ICARTT columns, add it.
+            if _flagv in list(flight_data.columns):
+                flag_data = flight_data[_flagv]
+                flag_data = flag_data.fillna(-999999).astype(int).to_numpy()
+                
+                # If the variable is already in the output file, replace data.
+                if flag_config['name'] in list(ds.variables):
+                    ds.variables[flag_config['name']][:] = flag_data
+                    continue
+                
+                # Else, create new variable.
+                else:
+                    
+                    # Make a new variable and add the data.
+                    x = ds.createVariable(
+                        flag_config['name'], 
+                        flag_config['datatype'], 
+                        ('time'), 
+                        fill_value=-999999, 
+                        zlib=True)
+
+                    # Set the attributes.
+                    x.setncatts(flag_config['attributes'])
+
+                    # Add the data.
+                    x[:] = flag_data
+
+        ### SPECIAL ACT-AMERICA ROUTINE ---------------------------------------
 
 
 
@@ -567,11 +675,13 @@ def _write_icartts_to_netcdf_files(DATA: dict):
             flight_resources = DATA['FLIGHT_RESOURCES'][flight]
 
         # Pass all of the information to write_netcdf.
-        write_netcdf(output_file=flight_output, 
-                     output_structure=output_structure,
-                     flight_data=flight_data, 
-                     flight_variables=output_variables,
-                     flight_resources=flight_resources)
+        write_netcdf(
+            output_file=flight_output, 
+            output_structure=output_structure,
+            flight_data=flight_data, 
+            flight_variables=output_variables,
+            flight_resources=flight_resources)
+
 
 
 
@@ -580,7 +690,7 @@ def _handle_input_configuration(input_config_path: str):
     '''
     '''
 
-    print("\n### VALIDATING INPUT CONFIG (YAML): {}".format(input_config_path))
+    print("\n### VALIDATE INPUT CONFIG (YAML): {}\n".format(input_config_path))
 
     try:
         with open(input_config_path, "r") as f:
@@ -612,7 +722,6 @@ def _handle_input_configuration(input_config_path: str):
         except Exception as e:
             _exit_with_error("Output directory cannot be created.")
             raise(e)
-
 
     return DATA
 

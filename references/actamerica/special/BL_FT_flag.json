@@ -1,0 +1,14 @@
+{
+    "name": "BoundaryLayerFreeTroposphereFlag",
+    "datatype": "float64",
+    "dimensions": [
+      "time"
+    ],
+    "attributes": {
+      "long_name": "Flag indicating whether aircraft is grounded, in boundary layer, or in free troposphere",
+      "coordinates": "time LATITUDE LONGITUDE GPS_ALT",
+      "flag_meanings": "on_ground boundary_layer free_troposphere",
+      "flag_values": [0, 1, 2],
+      "valid_range": [0, 2]
+    }
+}

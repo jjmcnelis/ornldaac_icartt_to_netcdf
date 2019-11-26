@@ -1,0 +1,14 @@
+{
+    "name": "FlightPatternFlag",
+    "datatype": "int32",
+    "dimensions": [
+      "time"
+    ],
+    "attributes": {
+      "long_name": "Flight pattern description",
+      "coordinates": "time LATITUDE LONGITUDE GPS_ALT",
+      "flag_meanings": "frontal pre-frontal_fair post-frontal_fair fair other",
+      "flag_values": [0, 1, 2, 3, 4],
+      "valid_range": [0, 4]
+    }
+}
