@@ -1,0 +1,14 @@
+{
+  "datatype": "float64",
+  "dimensions": [
+    "time"
+  ],
+  "attributes": {
+    "_FillValue": -999999.0,
+    "units": "m",
+    "long_name": "Flight navigation altitude",
+    "standard_name": "altitude",
+    "positive": "up",
+    "axis": "Z"
+  }
+}

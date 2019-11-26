@@ -216,13 +216,16 @@ def _write_resource_files(DATA: dict):
 
     csv_variables_header = [
         'VARIABLE_MAP',
-        'NETCDF_NAME',
         'ICARTT_NAME',
         'ICARTT_UNITS',
         'ICARTT_SCALE',
         'ICARTT_FILL',
-        'BOOL_INCLUDE',
-        'USERFUNC',
+        'OUTPUT_INCLUDE',
+        'OUTPUT_NAME',
+        'OUTPUT_UNITS',
+        'OUTPUT_SCALE',
+        'OUTPUT_FILL',
+        'USER_FUNC',
     ]
 
     # Open a new file for writing at the master variables table path.
@@ -235,9 +238,13 @@ def _write_resource_files(DATA: dict):
         # Open the variable reference JSONs in a loop.
         for j in glob(icartt_variable_dir + "*.json"):
             with open(j, "r") as inf:
+
+                name, units, scale, fill = list(json.load(inf).values())
                 
                 # Get the input ICARTT variable metadata. Add NULL.
-                ict_val = ['NULL']*2+list(json.load(inf).values())+[1, 'NULL']
+                # ict_val = ['NULL']*2+list(json.load(inf).values())+[1, 'NULL']
+                ict_val = ['NULL', name, units, scale, fill, 1, 
+                            name, units, scale, fill, 'NULL']
                 
                 # Get the values as a list and convert to strings.
                 out_val = [str(v) for v in ict_val]
@@ -486,7 +493,6 @@ def write_netcdf(
 
         # Add the dimensions from the reference structure in a loop.
         for name, dimension in output_structure['dimensions'].items():
-            #size = dimension['size'] if not dimension['UNLIMITED'] else None
 
             # If dimension is unlimited, size is None.
             if dimension['UNLIMITED']:
@@ -514,6 +520,20 @@ def write_netcdf(
 
             # Select the reference variable row for the currernt variable.
             var_row = flight_variables[flight_variables['ICARTT_NAME']==name]
+            
+            # Get the output name, units, scale, fill for the netCDF variable.
+            var_name = var_row.OUTPUT_NAME.values[0]
+            var_units = var_row.OUTPUT_UNITS.values[0]
+            var_scale = var_row.OUTPUT_SCALE.values[0]
+            # var_fill = var_row.OUTPUT_FILL.values[0]
+
+            # If this variable already exists in the file, skip.
+            if name in list(ds.variables):
+                continue
+
+            # If the variable is excluded, skip.
+            if var_row.OUTPUT_INCLUDE.values[0]==0:
+                continue
 
             # Get the variable reference JSON. If doesn't exist, skip variable.
             try:   
@@ -523,6 +543,9 @@ def write_netcdf(
                 # Read from JSON to Python dicitonary.
                 var_ref = read_netcdf_file_structure(var_map)
 
+                # Replace the units with OUTPUT_UNITS from config.
+                var_ref['attributes']['units'] = var_units
+
                  # If the reference is None, skip over this iterated variable.
                 if var_ref is None:
                     print(("   WARN: variable '{}' has no JSON reference."
@@ -531,52 +554,49 @@ def write_netcdf(
             
             # If exception is raised, notify user and skip this variable.
             except Exception as e:
-                # print(e)
                 print(("   WARN: variable '{}' is not in variables table."
                        " Skipping.").format(name))
                 continue
+
+            # Get the numpy data type from the reference datatype string.
+            try:
+                datatype = getattr(np, var_ref['datatype'])
+            except:
+                datatype = var_ref['datatype']
+
+            try:
+                # Create a variable with a fill value.
+                x = ds.createVariable(
+                    var_name, 
+                    datatype, 
+                    var_ref['dimensions'], 
+                    fill_value=var_ref['attributes']['_FillValue'],
+                    zlib=True)
+
+                # Delete the fill values from the attributes dict.
+                del var_ref['attributes']['_FillValue']
+
+            except:
+                # Else create a variable without a fill value.
+                x = ds.createVariable(
+                    var_name, 
+                    datatype, 
+                    var_ref['dimensions'], 
+                    zlib=True)
             
-            # IF no exception is raised, write the variable.
+            # Set the attirubtes.
+            x.setncatts(var_ref['attributes'])
+            
+            # Add the data.
+            if name=='FLIGHT':
+                x[:] = nc4.stringtochar(
+                    np.array(list(flight_datestring), dtype='S1'))
             else:
-
-                # Get the numpy data type from the reference datatype string.
-                try:
-                    datatype = getattr(np, var_ref['datatype'])
-                except:
-                    datatype = var_ref['datatype']
-
-                try:
-                    # Create a variable will a fill value.
-                    x = ds.createVariable(
-                        name, 
-                        datatype, 
-                        var_ref['dimensions'], 
-                        fill_value=var_ref['attributes']['_FillValue'],
-                        zlib=True)
-
-                    # Delete the fill values from the attributes dict.
-                    del var_ref['attributes']['_FillValue']
-
-                except:
-                    # Else create a variable without a fill value.
-                    x = ds.createVariable(
-                        name, 
-                        datatype, 
-                        var_ref['dimensions'], 
-                        zlib=True)
-                
-                # Set the attirubtes.
-                x.setncatts(var_ref['attributes'])
-                
-                # Add the data.
-                if name=='FLIGHT':
-                    x[:] = nc4.stringtochar(
-                        np.array(list(flight_datestring), dtype='S1'))
-                else:
-                    x[:] = flight_data[name].to_numpy()
+                x[:] = flight_data[name].to_numpy()*var_scale
 
 
         ### SPECIAL ACT-AMERICA ROUTINE ---------------------------------------
+
 
         # This special routine exists because the science team wants ot merge
         # some custom metadata flags with the merge ICARTT data set.
@@ -628,6 +648,7 @@ def write_netcdf(
                     # Add the data.
                     x[:] = flag_data
 
+
         ### SPECIAL ACT-AMERICA ROUTINE ---------------------------------------
 
 
@@ -659,7 +680,7 @@ def _write_icartts_to_netcdf_files(DATA: dict):
     # Loop over the ICARTT files.
     for flight, icartt in DATA['FLIGHTS'].items():
         counter += 1
-        print(" - [ {} / {} ] {} ".format(
+        print("\n - [ {} / {} ] {} ".format(
             counter, len(DATA['FLIGHTS']), os.path.basename(flight)))
 
         # Parse the flight tables and add the data to the dictionary.

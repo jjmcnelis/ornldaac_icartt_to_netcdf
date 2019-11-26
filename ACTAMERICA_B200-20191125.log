@@ -119,324 +119,324 @@
  - [ 108 / 108 ] ACTAMERICA-mrg05-b200_merge_20170220_R0_L2.ict 
 
 ### WRITING NETCDF FILES TO outputs/ACTAMERICA_Merge_B200/
+
  - [ 1 / 97 ] ACTAMERICA-mrg05-b200_merge_20171110_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 2 / 97 ] ACTAMERICA-mrg05-b200_merge_20171024_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 3 / 97 ] ACTAMERICA-mrg05-b200_merge_20160824_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 4 / 97 ] ACTAMERICA-mrg05-b200_merge_20171021_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 5 / 97 ] ACTAMERICA-mrg05-b200_merge_20171103_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 6 / 97 ] ACTAMERICA-mrg05-b200_merge_20180425_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 7 / 97 ] ACTAMERICA-mrg05-b200_merge_20160819_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 8 / 97 ] ACTAMERICA-mrg05-b200_merge_20170210_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 9 / 97 ] ACTAMERICA-mrg05-b200_merge_20180426_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 10 / 97 ] ACTAMERICA-mrg05-b200_merge_20160809_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 11 / 97 ] ACTAMERICA-mrg05-b200_merge_20160828_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 12 / 97 ] ACTAMERICA-mrg05-b200_merge_20180427_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 13 / 97 ] ACTAMERICA-mrg05-b200_merge_20180412_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 14 / 97 ] ACTAMERICA-mrg05-b200_merge_20160715_R0.ict 
 
 
 ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
 
 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 15 / 97 ] ACTAMERICA-mrg05-b200_merge_20171018_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 16 / 97 ] ACTAMERICA-mrg05-b200_merge_20160821_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 17 / 97 ] ACTAMERICA-mrg05-b200_merge_20170209_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 18 / 97 ] ACTAMERICA-mrg05-b200_merge_20180429_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 19 / 97 ] ACTAMERICA-mrg05-b200_merge_20171105_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 20 / 97 ] ACTAMERICA-mrg05-b200_merge_20160711_R0.ict 
 
 
 ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
 
 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 21 / 97 ] ACTAMERICA-mrg05-b200_merge_20180511_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 22 / 97 ] ACTAMERICA-mrg05-b200_merge_20160804_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 23 / 97 ] ACTAMERICA-mrg05-b200_merge_20180504_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 24 / 97 ] ACTAMERICA-mrg05-b200_merge_20170216_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 25 / 97 ] ACTAMERICA-mrg05-b200_merge_20160721_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 26 / 97 ] ACTAMERICA-mrg05-b200_merge_20170217_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 27 / 97 ] ACTAMERICA-mrg05-b200_merge_20170227_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 28 / 97 ] ACTAMERICA-mrg05-b200_merge_20170215_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 29 / 97 ] ACTAMERICA-mrg05-b200_merge_20180420_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 30 / 97 ] ACTAMERICA-mrg05-b200_merge_20180419_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 31 / 97 ] ACTAMERICA-mrg05-b200_merge_20171011_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 32 / 97 ] ACTAMERICA-mrg05-b200_merge_20171016_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 33 / 97 ] ACTAMERICA-mrg05-b200_merge_20171027_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 34 / 97 ] ACTAMERICA-mrg05-b200_merge_20170130_R0.ict 
 
 
 ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
 
 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 35 / 97 ] ACTAMERICA-mrg05-b200_merge_20180430_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 36 / 97 ] ACTAMERICA-mrg05-b200_merge_20170301_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 37 / 97 ] ACTAMERICA-mrg05-b200_merge_20171022_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 38 / 97 ] ACTAMERICA-mrg05-b200_merge_20170223_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 39 / 97 ] ACTAMERICA-mrg05-b200_merge_20160722_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 40 / 97 ] ACTAMERICA-mrg05-b200_merge_20180516_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 41 / 97 ] ACTAMERICA-mrg05-b200_merge_20170304_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 42 / 97 ] ACTAMERICA-mrg05-b200_merge_20170219_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 43 / 97 ] ACTAMERICA-mrg05-b200_merge_20160823_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 44 / 97 ] ACTAMERICA-mrg05-b200_merge_20170121_R0.ict 
 
 
 ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
 
 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 45 / 97 ] ACTAMERICA-mrg05-b200_merge_20171014_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 46 / 97 ] ACTAMERICA-mrg05-b200_merge_20170225_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 47 / 97 ] ACTAMERICA-mrg05-b200_merge_20170206_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 48 / 97 ] ACTAMERICA-mrg05-b200_merge_20170201_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 49 / 97 ] ACTAMERICA-mrg05-b200_merge_20170212_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 50 / 97 ] ACTAMERICA-mrg05-b200_merge_20160814_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 51 / 97 ] ACTAMERICA-mrg05-b200_merge_20180515_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 52 / 97 ] ACTAMERICA-mrg05-b200_merge_20160727_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 53 / 97 ] ACTAMERICA-mrg05-b200_merge_20180423_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 54 / 97 ] ACTAMERICA-mrg05-b200_merge_20160725_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 55 / 97 ] ACTAMERICA-mrg05-b200_merge_20180413_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 56 / 97 ] ACTAMERICA-mrg05-b200_merge_20160813_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 57 / 97 ] ACTAMERICA-mrg05-b200_merge_20170307_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 58 / 97 ] ACTAMERICA-mrg05-b200_merge_20171005_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 59 / 97 ] ACTAMERICA-mrg05-b200_merge_20180422_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 60 / 97 ] ACTAMERICA-mrg05-b200_merge_20180520_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 61 / 97 ] ACTAMERICA-mrg05-b200_merge_20171030_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 62 / 97 ] ACTAMERICA-mrg05-b200_merge_20170213_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 63 / 97 ] ACTAMERICA-mrg05-b200_merge_20170125_R0.ict 
 
 
 ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
 
 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 64 / 97 ] ACTAMERICA-mrg05-b200_merge_20170208_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 65 / 97 ] ACTAMERICA-mrg05-b200_merge_20160822_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 66 / 97 ] ACTAMERICA-mrg05-b200_merge_20171003_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 67 / 97 ] ACTAMERICA-mrg05-b200_merge_20160808_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 68 / 97 ] ACTAMERICA-mrg05-b200_merge_20171113_R0.ict 
 
 
 ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
 
 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 69 / 97 ] ACTAMERICA-mrg05-b200_merge_20180501_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 70 / 97 ] ACTAMERICA-mrg05-b200_merge_20160816_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 71 / 97 ] ACTAMERICA-mrg05-b200_merge_20160812_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 72 / 97 ] ACTAMERICA-mrg05-b200_merge_20160718_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 73 / 97 ] ACTAMERICA-mrg05-b200_merge_20160820_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 74 / 97 ] ACTAMERICA-mrg05-b200_merge_20160827_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 75 / 97 ] ACTAMERICA-mrg05-b200_merge_20180416_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 76 / 97 ] ACTAMERICA-mrg05-b200_merge_20171109_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 77 / 97 ] ACTAMERICA-mrg05-b200_merge_20171004_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 78 / 97 ] ACTAMERICA-mrg05-b200_merge_20180518_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 79 / 97 ] ACTAMERICA-mrg05-b200_merge_20170308_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 80 / 97 ] ACTAMERICA-mrg05-b200_merge_20171010_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 81 / 97 ] ACTAMERICA-mrg05-b200_merge_20180414_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 82 / 97 ] ACTAMERICA-mrg05-b200_merge_20170204_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 83 / 97 ] ACTAMERICA-mrg05-b200_merge_20171106_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 84 / 97 ] ACTAMERICA-mrg05-b200_merge_20171008_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 85 / 97 ] ACTAMERICA-mrg05-b200_merge_20180418_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 86 / 97 ] ACTAMERICA-mrg05-b200_merge_20180502_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 87 / 97 ] ACTAMERICA-mrg05-b200_merge_20180509_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 88 / 97 ] ACTAMERICA-mrg05-b200_merge_20171026_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 89 / 97 ] ACTAMERICA-mrg05-b200_merge_20160805_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 90 / 97 ] ACTAMERICA-mrg05-b200_merge_20180512_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 91 / 97 ] ACTAMERICA-mrg05-b200_merge_20180508_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 92 / 97 ] ACTAMERICA-mrg05-b200_merge_20160803_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 93 / 97 ] ACTAMERICA-mrg05-b200_merge_20180417_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 94 / 97 ] ACTAMERICA-mrg05-b200_merge_20171020_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 95 / 97 ] ACTAMERICA-mrg05-b200_merge_20170220_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude_AGL' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 96 / 97 ] ACTAMERICA-mrg05-b200_merge_20171102_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
  - [ 97 / 97 ] ACTAMERICA-mrg05-b200_merge_20160726_R0.ict 
-   WARN: variable 'INDEX' has no JSON reference. Skipping.
-   WARN: variable 'Altitude-AGL_GoogleMaps' is not in variables table. Skipping.
+   WARN: variable 'INDEX' is not in variables table. Skipping.
