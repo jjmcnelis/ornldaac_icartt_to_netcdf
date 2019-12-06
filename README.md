@@ -4,6 +4,7 @@
 
 **Requirements:** Python 3
 
+* `pyyaml`: A basic YAML file parser for the configuration: https://pypi.org/project/PyYAML/
 * `numpy`: https://numpy.org/
 * `pandas`: https://pandas.pydata.org/
 * `netCDF4`: https://unidata.github.io/netcdf4-python/netCDF4/index.html
