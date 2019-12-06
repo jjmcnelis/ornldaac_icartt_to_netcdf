@@ -4,10 +4,10 @@
 
 **Requirements:** Python 3
 
-* `pyyaml`: A basic YAML file parser for the configuration: https://pypi.org/project/PyYAML/
 * `numpy`: https://numpy.org/
 * `pandas`: https://pandas.pydata.org/
 * `netCDF4`: https://unidata.github.io/netcdf4-python/netCDF4/index.html
+* `pyyaml`: YAML file parser for the config: https://pypi.org/project/PyYAML/
 
 **Create/edit configuration YAML file** (e.g. [`ACTAMERICA_B200.yml`](ACTAMERICA_B200.yml)) 
 
@@ -36,13 +36,15 @@ RESOURCES:
     ICARTT_VARIABLES: icartt_variables/
 ```
 
+**Execute**
+
 Then pass the configuration file as the only argument to the `ornldaac_icartt_to_netcdf` module (to [`ornldaac_icartt_to_netcdf/__main__.py`](ornldaac_icartt_to_netcdf/__main__.py)):
 
 ```python
 python -m ornldaac_icartt_to_netcdf [CONFIG].yml
 ```
 
-As long as you have place the ICARTTs in an accessible folder and the full path is given in the `CONFIG.yml` file, everything should be good. I will refine this soon.
+As long as you have place the ICARTTs in an accessible folder and the full path is given in the `CONFIG.yml` file, everything should be good. I will revise this soon.
 
 **to do**
 
