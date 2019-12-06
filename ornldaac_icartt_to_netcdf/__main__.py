@@ -526,6 +526,10 @@ def write_netcdf(
             var_units = var_row.OUTPUT_UNITS.values[0]
             var_scale = var_row.OUTPUT_SCALE.values[0]
             # var_fill = var_row.OUTPUT_FILL.values[0]
+            
+            # print(var_name)
+            # print(var_units)
+            # print(var_scale)
 
             # If this variable already exists in the file, skip.
             if name in list(ds.variables):
@@ -592,7 +596,9 @@ def write_netcdf(
                 x[:] = nc4.stringtochar(
                     np.array(list(flight_datestring), dtype='S1'))
             else:
-                x[:] = flight_data[name].to_numpy()*var_scale
+                x[:] = flight_data[name].to_numpy()
+                x.set_auto_mask(True)
+                x[:] = x[:]*var_scale
 
 
         ### SPECIAL ACT-AMERICA ROUTINE ---------------------------------------

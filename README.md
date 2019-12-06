@@ -1,4 +1,4 @@
-# EVS ICARTT to netCDF4
+# ORNL DAAC ICARTT to netCDF4
 
 ## quick start
 

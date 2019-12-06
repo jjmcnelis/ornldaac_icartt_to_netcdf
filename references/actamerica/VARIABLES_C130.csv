@@ -1,9 +1,9 @@
 VARIABLE_MAP,ICARTT_NAME,ICARTT_UNITS,ICARTT_SCALE,ICARTT_FILL,OUTPUT_INCLUDE,OUTPUT_NAME,OUTPUT_UNITS,OUTPUT_SCALE,OUTPUT_FILL,USER_FUNC
 references/actamerica/variables/C130/AircraftSunAzimuth.json,AircraftSunAzimuth,degs,1,-999999,1,AircraftSunAzimuth,degs,1,-999999,NULL
 references/actamerica/variables/C130/AircraftSunElevation.json,AircraftSunElevation,degs,1,-999999,1,AircraftSunElevation,degs,1,-999999,NULL
-references/actamerica/variables/C130/Altitude-AGL_GoogleMaps.json,Altitude_AGL,km,1,-999999,1,Altitude_AGL,km,1,-999999,NULL
-references/actamerica/variables/C130/Altitude_AGL.json,Altitude-AGL_GoogleMaps,km,1,-999999,1,Altitude_AGL,km,1,-999999,NULL
-references/actamerica/variables/C130/ALTP.json,ALTP,km,1,-999999,1,ALTP,km,1,-999999,NULL
+references/actamerica/variables/C130/Altitude-AGL_GoogleMaps.json,Altitude_AGL,km,1,-999999,1,Altitude_AGL,m,1000,-999999,NULL
+references/actamerica/variables/C130/Altitude_AGL.json,Altitude-AGL_GoogleMaps,km,1,-999999,1,Altitude_AGL,m,1000,-999999,NULL
+references/actamerica/variables/C130/ALTP.json,ALTP,km,1,-999999,1,ALTP,m,1000,-999999,NULL
 references/actamerica/variables/C130/BENZ_MoleFraction_PFP.json,BENZ_MoleFraction_PFP,ppt,1,-999999,1,BENZ_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/C130/C2F6_MoleFraction_PFP.json,C2F6_MoleFraction_PFP,ppt,1,-999999,1,C2F6_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/C130/C2H2_MoleFraction_PFP.json,C2H2_MoleFraction_PFP,ppt,1,-999999,1,C2H2_MoleFraction_PFP,ppt,1,-999999,NULL
@@ -48,7 +48,7 @@ references/actamerica/variables/C130/F32_MoleFraction_PFP.json,F32_MoleFraction_
 references/actamerica/variables/C130/F365m_MoleFraction_PFP.json,F365m_MoleFraction_PFP,ppt,1,-999999,1,F365m_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/C130/FC12_MoleFraction_PFP.json,FC12_MoleFraction_PFP,ppt,1,-999999,1,FC12_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/C130/Flight_ID.json,FLIGHT,none,1,-999999,1,Flight_ID,none,1,-999999,NULL
-references/actamerica/variables/C130/GPS_ALT.json,GPS_ALT,km,1,-999999,1,GPS_ALT,km,1,-999999,NULL
+references/actamerica/variables/C130/GPS_ALT.json,GPS_ALT,km,1,-999999,1,GPS_ALT,m,1000,-999999,NULL
 references/actamerica/variables/C130/GRD_SPD.json,GRD_SPD,m s-1,1,-999999,1,GRD_SPD,m s-1,1,-999999,NULL
 references/actamerica/variables/C130/Ground_Elevation.json,Ground_Elevation,km,1,-999999,1,GroundElevation,km,1,-999999,NULL
 references/actamerica/variables/C130/GroundElevation-AMSL_GoogleMaps.json,GroundElevation-AMSL_GoogleMaps,km,1,-999999,1,GroundElevation,km,1,-999999,NULL
@@ -119,7 +119,7 @@ references/actamerica/variables/C130/THETA.json,THETA,K,1,-999999,1,THETA,K,1,-9
 references/actamerica/variables/C130/TOL_MoleFraction_PFP.json,TOL_MoleFraction_PFP,ppt,1,-999999,1,TOL_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/C130/TotalAirTemp.json,TotalAirTemp,K,1,-999999,1,TotalAirTemp,K,1,-999999,NULL
 references/actamerica/variables/C130/TRK.json,TRK,degs,1,-999999,1,TRK,degs,1,-999999,NULL
-references/actamerica/variables/C130/UTC.json,UTC,s,1,nan,1,UTC,s,1,nan,NULL
+references/actamerica/variables/C130/UTC.json,UTC,s,1,nan,1,time,s,1,nan,NULL
 references/actamerica/variables/C130/VerticalSpeed.json,VerticalSpeed,m s-1,1,-999999,1,VerticalSpeed,m s-1,1,-999999,NULL
 references/actamerica/variables/C130/Wind_Direction.json,WND,Degs,1,-999999,1,Wind_Direction,Degs,1,-999999,NULL
 references/actamerica/variables/C130/Wind_Speed.json,WNS,m s-1,1,-999999,1,Wind_Speed,m s-1,1,-999999,NULL

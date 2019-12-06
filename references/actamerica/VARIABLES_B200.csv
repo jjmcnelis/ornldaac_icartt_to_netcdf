@@ -1,9 +1,9 @@
 VARIABLE_MAP,ICARTT_NAME,ICARTT_UNITS,ICARTT_SCALE,ICARTT_FILL,OUTPUT_INCLUDE,OUTPUT_NAME,OUTPUT_UNITS,OUTPUT_SCALE,OUTPUT_FILL,USER_FUNC
 references/actamerica/variables/B200/AircraftSunAzimuth.json,AircraftSunAzimuth,degs,1,-999999,1,AircraftSunAzimuth,degs,1,-999999,NULL
 references/actamerica/variables/B200/AircraftSunElevation.json,AircraftSunElevation,degs,1,-999999,1,AircraftSunElevation,degs,1,-999999,NULL
-references/actamerica/variables/B200/Altitude_AGL.json,Altitude_AGL,km,1,-999999,1,Altitude_AGL,km,1,-999999,NULL
-references/actamerica/variables/B200/Altitude_AGL.json,Altitude-AGL_GoogleMaps,km,1,-999999,1,Altitude_AGL,km,1,-999999,NULL
-references/actamerica/variables/B200/ALTP.json,ALTP,km,1,-999999,1,ALTP,km,1,-999999,NULL
+references/actamerica/variables/B200/Altitude_AGL.json,Altitude_AGL,km,1,-999999,1,Altitude_AGL,m,1000,-999999,NULL
+references/actamerica/variables/B200/Altitude_AGL.json,Altitude-AGL_GoogleMaps,km,1,-999999,1,Altitude_AGL,m,1000,-999999,NULL
+references/actamerica/variables/B200/ALTP.json,ALTP,km,1,-999999,1,ALTP,m,1000,-999999,NULL
 references/actamerica/variables/B200/BENZ_MoleFraction_PFP.json,BENZ_MoleFraction_PFP,ppt,1,-999999,1,BENZ_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/B200/C2F6_MoleFraction_PFP.json,C2F6_MoleFraction_PFP,ppt,1,-999999,1,C2F6_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/B200/C2H2_MoleFraction_PFP.json,C2H2_MoleFraction_PFP,ppt,1,-999999,1,C2H2_MoleFraction_PFP,ppt,1,-999999,NULL
@@ -50,7 +50,7 @@ references/actamerica/variables/B200/F32_MoleFraction_PFP.json,F32_MoleFraction_
 references/actamerica/variables/B200/F365m_MoleFraction_PFP.json,F365m_MoleFraction_PFP,ppt,1,-999999,1,F365m_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/B200/FC12_MoleFraction_PFP.json,FC12_MoleFraction_PFP,ppt,1,-999999,1,FC12_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/B200/Flight_ID.json,FLIGHT,none,1,-999999,1,Flight_ID,none,1,-999999,NULL
-references/actamerica/variables/B200/GPS_ALT.json,GPS_ALT,km,1,-999999,1,GPS_ALT,km,1,-999999,NULL
+references/actamerica/variables/B200/GPS_ALT.json,GPS_ALT,km,1,-999999,1,GPS_ALT,m,1000,-999999,NULL
 references/actamerica/variables/B200/GRD_SPD.json,GRD_SPD,m/s,1,-999999,1,GRD_SPD,m/s,1,-999999,NULL
 references/actamerica/variables/B200/Ground_Elevation.json,Ground_Elevation,km,1,-999999,1,Ground_Elevation,km,1,-999999,NULL
 references/actamerica/variables/B200/GroundElevation-AMSL_GoogleMaps.json,GroundElevation-AMSL_GoogleMaps,km,1,-999999,1,GroundElevation-AMSL_GoogleMaps,km,1,-999999,NULL
@@ -114,7 +114,7 @@ references/actamerica/variables/B200/TOL_MoleFraction_PFP.json,TOL_MoleFraction_
 references/actamerica/variables/B200/TotalAirTemp.json,TotalAirTemp,K,1,-999999,1,TotalAirTemp,K,1,-999999,NULL
 references/actamerica/variables/B200/TRK.json,TRK,degs,1,-999999,1,TRK,degs,1,-999999,NULL
 references/actamerica/variables/B200/u_wind.json,U_WINDS,m s-1,1,-999999,1,U_WINDS,m s-1,1,-999999,NULL
-references/actamerica/variables/B200/UTC.json,UTC,s,1,nan,1,UTC,s,1,nan,NULL
+references/actamerica/variables/B200/UTC.json,UTC,s,1,nan,1,time,s,1,nan,NULL
 references/actamerica/variables/B200/v_wind.json,V_WINDS,m s-1,1,-999999,1,V_WINDS,m s-1,1,-999999,NULL
 references/actamerica/variables/B200/VerticalSpeed.json,VerticalSpeed,ft min-1,1,-999999,1,VerticalSpeed,ft min-1,1,-999999,NULL
 references/actamerica/variables/B200/Wind_Direction.json,WND,Degs,1,-999999,1,Wind_Direction,Degs,1,-999999,NULL
