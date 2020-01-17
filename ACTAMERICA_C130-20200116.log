@@ -1,0 +1,402 @@
+
+### VALIDATE INPUT CONFIG (YAML): ACTAMERICA_C130.yml
+
+ ## 1. Input ICARTT directory: inputs/ACTAMERICA_Merge/C130/
+ - Found [ 86 ] ICARTTs.
+
+ ## 2. Output files directory: outputs/ACTAMERICA_Merge_C130/
+
+### WRITING RESOURCES IN DIRECTORY: /home/jnd/Documents/git/ornldaac_icartt_to_netcdf/outputs/ACTAMERICA_Merge_C130
+
+### PARSING ICARTT HEADERS IN A LOOP AND WRITING RESOURCE FILES.
+ - [ 1 / 86 ] ACTAMERICA-mrg05-c130_merge_20160805_R3.ict 
+ - [ 2 / 86 ] ACTAMERICA-mrg05-c130_merge_20170212_R0.ict 
+ - [ 3 / 86 ] ACTAMERICA-mrg05-c130_merge_20170206_R0.ict 
+ - [ 4 / 86 ] ACTAMERICA-mrg05-c130_merge_20160816_R3.ict 
+ - [ 5 / 86 ] ACTAMERICA-mrg05-c130_merge_20171022_R0.ict 
+ - [ 6 / 86 ] ACTAMERICA-mrg05-c130_merge_20171102_R0.ict 
+ - [ 7 / 86 ] ACTAMERICA-mrg05-c130_merge_20160727_R3.ict 
+ - [ 8 / 86 ] ACTAMERICA-mrg05-c130_merge_20160721_R3.ict 
+ - [ 9 / 86 ] ACTAMERICA-mrg05-c130_merge_20180508_R0.ict 
+ - [ 10 / 86 ] ACTAMERICA-mrg05-c130_merge_20180511_R0.ict 
+ - [ 11 / 86 ] ACTAMERICA-mrg05-c130_merge_20180520_R0.ict 
+ - [ 12 / 86 ] ACTAMERICA-mrg05-c130_merge_20170303_R0.ict 
+ - [ 13 / 86 ] ACTAMERICA-mrg05-c130_merge_20160820_R3.ict 
+ - [ 14 / 86 ] ACTAMERICA-mrg05-c130_merge_20180515_R0.ict 
+ - [ 15 / 86 ] ACTAMERICA-mrg05-c130_merge_20171110_R0.ict 
+ - [ 16 / 86 ] ACTAMERICA-mrg05-c130_merge_20170130_R0.ict 
+ - [ 17 / 86 ] ACTAMERICA-mrg05-c130_merge_20170308_R0.ict 
+ - [ 18 / 86 ] ACTAMERICA-mrg05-c130_merge_20180512_R0.ict 
+ - [ 19 / 86 ] ACTAMERICA-mrg05-c130_merge_20171024_R0.ict 
+ - [ 20 / 86 ] ACTAMERICA-mrg05-c130_merge_20170125_R0.ict 
+ - [ 21 / 86 ] ACTAMERICA-mrg05-c130_merge_20160808_R3.ict 
+ - [ 22 / 86 ] ACTAMERICA-mrg05-c130_merge_20171005_R0.ict 
+ - [ 23 / 86 ] ACTAMERICA-mrg05-c130_merge_20170301_R0.ict 
+ - [ 24 / 86 ] ACTAMERICA-mrg05-c130_merge_20160814_R3.ict 
+ - [ 25 / 86 ] ACTAMERICA-mrg05-c130_merge_20160827_R3.ict 
+ - [ 26 / 86 ] ACTAMERICA-mrg05-c130_merge_20180518_R0.ict 
+ - [ 27 / 86 ] ACTAMERICA-mrg05-c130_merge_20160726_R3.ict 
+ - [ 28 / 86 ] ACTAMERICA-mrg05-c130_merge_20160819_R3.ict 
+ - [ 29 / 86 ] ACTAMERICA-mrg05-c130_merge_20170225_R0.ict 
+ - [ 30 / 86 ] ACTAMERICA-mrg05-c130_merge_20160824_R3.ict 
+ - [ 31 / 86 ] ACTAMERICA-mrg05-c130_merge_20170304_R0.ict 
+ - [ 32 / 86 ] ACTAMERICA-mrg05-c130_merge_20170227_R0.ict 
+ - [ 33 / 86 ] ACTAMERICA-mrg05-c130_merge_20180427_R0.ict 
+ - [ 34 / 86 ] ACTAMERICA-mrg05-c130_merge_20160725_R3.ict 
+ - [ 35 / 86 ] ACTAMERICA-mrg05-c130_merge_20170201_R0.ict 
+ - [ 36 / 86 ] ACTAMERICA-mrg05-c130_merge_20171105_R0.ict 
+ - [ 37 / 86 ] ACTAMERICA-mrg05-c130_merge_20171020_R0.ict 
+ - [ 38 / 86 ] ACTAMERICA-mrg05-c130_merge_20170302_R0.ict 
+ - [ 39 / 86 ] ACTAMERICA-mrg05-c130_merge_20170310_R0.ict 
+ - [ 40 / 86 ] ACTAMERICA-mrg05-c130_merge_20160821_R3.ict 
+ - [ 41 / 86 ] ACTAMERICA-mrg05-c130_merge_20170215_R0.ict 
+ - [ 42 / 86 ] ACTAMERICA-mrg05-c130_merge_20171113_R0.ict 
+ - [ 43 / 86 ] ACTAMERICA-mrg05-c130_merge_20171008_R0.ict 
+ - [ 44 / 86 ] ACTAMERICA-mrg05-c130_merge_20160810_R3.ict 
+ - [ 45 / 86 ] ACTAMERICA-mrg05-c130_merge_20160822_R3.ict 
+ - [ 46 / 86 ] ACTAMERICA-mrg05-c130_merge_20171010_R0.ict 
+ - [ 47 / 86 ] ACTAMERICA-mrg05-c130_merge_20160812_R3.ict 
+ - [ 48 / 86 ] ACTAMERICA-mrg05-c130_merge_20171109_R0.ict 
+ - [ 49 / 86 ] ACTAMERICA-mrg05-c130_merge_20160809_R3.ict 
+ - [ 50 / 86 ] ACTAMERICA-mrg05-c130_merge_20160722_R3.ict 
+ - [ 51 / 86 ] ACTAMERICA-mrg05-c130_merge_20170226_R0.ict 
+ - [ 52 / 86 ] ACTAMERICA-mrg05-c130_merge_20171027_R0.ict 
+ - [ 53 / 86 ] ACTAMERICA-mrg05-c130_merge_20170223_R0.ict 
+ - [ 54 / 86 ] ACTAMERICA-mrg05-c130_merge_20171004_R0.ict 
+ - [ 55 / 86 ] ACTAMERICA-mrg05-c130_merge_20160804_R3.ict 
+ - [ 56 / 86 ] ACTAMERICA-mrg05-c130_merge_20180426_R0.ict 
+ - [ 57 / 86 ] ACTAMERICA-mrg05-c130_merge_20171018_R0.ict 
+ - [ 58 / 86 ] ACTAMERICA-mrg05-c130_merge_20180509_R0.ict 
+ - [ 59 / 86 ] ACTAMERICA-mrg05-c130_merge_20171011_R0.ict 
+ - [ 60 / 86 ] ACTAMERICA-mrg05-c130_merge_20160718_R3.ict 
+ - [ 61 / 86 ] ACTAMERICA-mrg05-c130_merge_20171106_R0.ict 
+ - [ 62 / 86 ] ACTAMERICA-mrg05-c130_merge_20170309_R0.ict 
+ - [ 63 / 86 ] ACTAMERICA-mrg05-c130_merge_20170216_R0.ict 
+ - [ 64 / 86 ] ACTAMERICA-mrg05-c130_merge_20170213_R0_L1.ict 
+ - [ 65 / 86 ] ACTAMERICA-mrg05-c130_merge_20170204_R0.ict 
+ - [ 66 / 86 ] ACTAMERICA-mrg05-c130_merge_20171003_R0.ict 
+ - [ 67 / 86 ] ACTAMERICA-mrg05-c130_merge_20171014_R0.ict 
+ - [ 68 / 86 ] ACTAMERICA-mrg05-c130_merge_20180425_R0.ict 
+ - [ 69 / 86 ] ACTAMERICA-mrg05-c130_merge_20170307_R0.ict 
+ - [ 70 / 86 ] ACTAMERICA-mrg05-c130_merge_20160813_R3.ict 
+ - [ 71 / 86 ] ACTAMERICA-mrg05-c130_merge_20180501_R0.ict 
+ - [ 72 / 86 ] ACTAMERICA-mrg05-c130_merge_20171030_R0.ict 
+ - [ 73 / 86 ] ACTAMERICA-mrg05-c130_merge_20160719_R3.ict 
+ - [ 74 / 86 ] ACTAMERICA-mrg05-c130_merge_20180516_R0.ict 
+ - [ 75 / 86 ] ACTAMERICA-mrg05-c130_merge_20171021_R0.ict 
+ - [ 76 / 86 ] ACTAMERICA-mrg05-c130_merge_20180430_R0.ict 
+ - [ 77 / 86 ] ACTAMERICA-mrg05-c130_merge_20180423_R0.ict 
+ - [ 78 / 86 ] ACTAMERICA-mrg05-c130_merge_20171103_R0.ict 
+ - [ 79 / 86 ] ACTAMERICA-mrg05-c130_merge_20180502_R0.ict 
+ - [ 80 / 86 ] ACTAMERICA-mrg05-c130_merge_20160828_R3.ict 
+ - [ 81 / 86 ] ACTAMERICA-mrg05-c130_merge_20170213_R0_L2.ict 
+ - [ 82 / 86 ] ACTAMERICA-mrg05-c130_merge_20171026_R0.ict 
+ - [ 83 / 86 ] ACTAMERICA-mrg05-c130_merge_20180429_R0.ict 
+ - [ 84 / 86 ] ACTAMERICA-mrg05-c130_merge_20180504_R0.ict 
+ - [ 85 / 86 ] ACTAMERICA-mrg05-c130_merge_20171016_R0.ict 
+ - [ 86 / 86 ] ACTAMERICA-mrg05-c130_merge_20160803_R3.ict 
+
+### WRITING NETCDF FILES TO outputs/ACTAMERICA_Merge_C130/
+
+ - [ 1 / 85 ] ACTAMERICA-mrg05-c130_merge_20160805_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 2 / 85 ] ACTAMERICA-mrg05-c130_merge_20170212_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 3 / 85 ] ACTAMERICA-mrg05-c130_merge_20170206_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 4 / 85 ] ACTAMERICA-mrg05-c130_merge_20160816_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 5 / 85 ] ACTAMERICA-mrg05-c130_merge_20171022_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 6 / 85 ] ACTAMERICA-mrg05-c130_merge_20171102_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 7 / 85 ] ACTAMERICA-mrg05-c130_merge_20160727_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 8 / 85 ] ACTAMERICA-mrg05-c130_merge_20160721_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 9 / 85 ] ACTAMERICA-mrg05-c130_merge_20180508_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 10 / 85 ] ACTAMERICA-mrg05-c130_merge_20180511_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 11 / 85 ] ACTAMERICA-mrg05-c130_merge_20180520_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 12 / 85 ] ACTAMERICA-mrg05-c130_merge_20170303_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 13 / 85 ] ACTAMERICA-mrg05-c130_merge_20160820_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 14 / 85 ] ACTAMERICA-mrg05-c130_merge_20180515_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 15 / 85 ] ACTAMERICA-mrg05-c130_merge_20171110_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 16 / 85 ] ACTAMERICA-mrg05-c130_merge_20170130_R0.ict 
+
+
+ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
+
+
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 17 / 85 ] ACTAMERICA-mrg05-c130_merge_20170308_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 18 / 85 ] ACTAMERICA-mrg05-c130_merge_20180512_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 19 / 85 ] ACTAMERICA-mrg05-c130_merge_20171024_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 20 / 85 ] ACTAMERICA-mrg05-c130_merge_20170125_R0.ict 
+
+
+ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
+
+
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 21 / 85 ] ACTAMERICA-mrg05-c130_merge_20160808_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 22 / 85 ] ACTAMERICA-mrg05-c130_merge_20171005_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 23 / 85 ] ACTAMERICA-mrg05-c130_merge_20170301_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 24 / 85 ] ACTAMERICA-mrg05-c130_merge_20160814_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 25 / 85 ] ACTAMERICA-mrg05-c130_merge_20160827_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 26 / 85 ] ACTAMERICA-mrg05-c130_merge_20180518_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 27 / 85 ] ACTAMERICA-mrg05-c130_merge_20160726_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 28 / 85 ] ACTAMERICA-mrg05-c130_merge_20160819_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 29 / 85 ] ACTAMERICA-mrg05-c130_merge_20170225_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 30 / 85 ] ACTAMERICA-mrg05-c130_merge_20160824_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 31 / 85 ] ACTAMERICA-mrg05-c130_merge_20170304_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 32 / 85 ] ACTAMERICA-mrg05-c130_merge_20170227_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 33 / 85 ] ACTAMERICA-mrg05-c130_merge_20180427_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 34 / 85 ] ACTAMERICA-mrg05-c130_merge_20160725_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 35 / 85 ] ACTAMERICA-mrg05-c130_merge_20170201_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 36 / 85 ] ACTAMERICA-mrg05-c130_merge_20171105_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 37 / 85 ] ACTAMERICA-mrg05-c130_merge_20171020_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 38 / 85 ] ACTAMERICA-mrg05-c130_merge_20170302_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 39 / 85 ] ACTAMERICA-mrg05-c130_merge_20170310_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 40 / 85 ] ACTAMERICA-mrg05-c130_merge_20160821_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 41 / 85 ] ACTAMERICA-mrg05-c130_merge_20170215_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 42 / 85 ] ACTAMERICA-mrg05-c130_merge_20171113_R0.ict 
+
+
+ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
+
+
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 43 / 85 ] ACTAMERICA-mrg05-c130_merge_20171008_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 44 / 85 ] ACTAMERICA-mrg05-c130_merge_20160810_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 45 / 85 ] ACTAMERICA-mrg05-c130_merge_20160822_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 46 / 85 ] ACTAMERICA-mrg05-c130_merge_20171010_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 47 / 85 ] ACTAMERICA-mrg05-c130_merge_20160812_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 48 / 85 ] ACTAMERICA-mrg05-c130_merge_20171109_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 49 / 85 ] ACTAMERICA-mrg05-c130_merge_20160809_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 50 / 85 ] ACTAMERICA-mrg05-c130_merge_20160722_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 51 / 85 ] ACTAMERICA-mrg05-c130_merge_20170226_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 52 / 85 ] ACTAMERICA-mrg05-c130_merge_20171027_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 53 / 85 ] ACTAMERICA-mrg05-c130_merge_20170223_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 54 / 85 ] ACTAMERICA-mrg05-c130_merge_20171004_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 55 / 85 ] ACTAMERICA-mrg05-c130_merge_20160804_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 56 / 85 ] ACTAMERICA-mrg05-c130_merge_20180426_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 57 / 85 ] ACTAMERICA-mrg05-c130_merge_20171018_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 58 / 85 ] ACTAMERICA-mrg05-c130_merge_20180509_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 59 / 85 ] ACTAMERICA-mrg05-c130_merge_20171011_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 60 / 85 ] ACTAMERICA-mrg05-c130_merge_20160718_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 61 / 85 ] ACTAMERICA-mrg05-c130_merge_20171106_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 62 / 85 ] ACTAMERICA-mrg05-c130_merge_20170309_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 63 / 85 ] ACTAMERICA-mrg05-c130_merge_20170216_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 64 / 85 ] ACTAMERICA-mrg05-c130_merge_20170213_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 65 / 85 ] ACTAMERICA-mrg05-c130_merge_20170204_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 66 / 85 ] ACTAMERICA-mrg05-c130_merge_20171003_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 67 / 85 ] ACTAMERICA-mrg05-c130_merge_20171014_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 68 / 85 ] ACTAMERICA-mrg05-c130_merge_20180425_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 69 / 85 ] ACTAMERICA-mrg05-c130_merge_20170307_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 70 / 85 ] ACTAMERICA-mrg05-c130_merge_20160813_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 71 / 85 ] ACTAMERICA-mrg05-c130_merge_20180501_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 72 / 85 ] ACTAMERICA-mrg05-c130_merge_20171030_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 73 / 85 ] ACTAMERICA-mrg05-c130_merge_20160719_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 74 / 85 ] ACTAMERICA-mrg05-c130_merge_20180516_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 75 / 85 ] ACTAMERICA-mrg05-c130_merge_20171021_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 76 / 85 ] ACTAMERICA-mrg05-c130_merge_20180430_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 77 / 85 ] ACTAMERICA-mrg05-c130_merge_20180423_R0.ict 
+
+
+ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
+
+
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 78 / 85 ] ACTAMERICA-mrg05-c130_merge_20171103_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 79 / 85 ] ACTAMERICA-mrg05-c130_merge_20180502_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 80 / 85 ] ACTAMERICA-mrg05-c130_merge_20160828_R3.ict 
+
+
+ESCAPED FLAG MERGE! FLAGS NOT WRITTEN TO OUTPUT!
+
+
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 81 / 85 ] ACTAMERICA-mrg05-c130_merge_20171026_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 82 / 85 ] ACTAMERICA-mrg05-c130_merge_20180429_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 83 / 85 ] ACTAMERICA-mrg05-c130_merge_20180504_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+
+ - [ 84 / 85 ] ACTAMERICA-mrg05-c130_merge_20171016_R0.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.
+   WARN: variable 'GPS_ALT' is duplicate variable! Skipping.
+
+ - [ 85 / 85 ] ACTAMERICA-mrg05-c130_merge_20160803_R3.ict 
+   WARN: variable 'INDEX' is not in variables table. Skipping.

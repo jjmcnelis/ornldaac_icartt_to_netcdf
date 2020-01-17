@@ -15,8 +15,8 @@ references/actamerica/variables/B200/CabinPressure.json,CabinPressure,hPa,1,-999
 references/actamerica/variables/B200/CF4_MoleFraction_PFP.json,CF4_MoleFraction_PFP,ppt,1,-999999,1,CF4_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/B200/CH2BrCl_MoleFraction_PFP.json,CH2BrCl_MoleFraction_PFP,ppt,1,-999999,1,CH2BrCl_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/B200/CH3I_MoleFraction_PFP.json,CH3I_MoleFraction_PFP,ppt,1,-999999,1,CH3I_MoleFraction_PFP,ppt,1,-999999,NULL
-references/actamerica/variables/B200/CH4_DryMoleFrac_PICARRO.json,CH4_DryMoleFrac_PICARRO,ppm,1,-999999,1,CH4_DryMoleFrac_PICARRO,ppm,1,-999999,NULL
-references/actamerica/variables/B200/CH4_DryMoleFrac_PICARRO.json,CH4_MixingRatio_PICARRO,ppmv,1,-999999,1,CH4_DryMoleFrac_PICARRO,ppmv,1,-999999,NULL
+references/actamerica/variables/B200/CH4_DryMoleFrac_PICARRO.json,CH4_DryMoleFrac_PICARRO,ppm,1,-999999,1,CH4_MixingRatio_PICARRO,ppm,1,-999999,NULL
+references/actamerica/variables/B200/CH4_DryMoleFrac_PICARRO.json,CH4_MixingRatio_PICARRO,ppmv,1,-999999,1,CH4_MixingRatio_PICARRO,ppmv,1,-999999,NULL
 references/actamerica/variables/B200/CH4_MoleFraction_PFP.json,CH4_MoleFraction_PFP,ppb,1,-999999,1,CH4_MoleFraction_PFP,ppb,1,-999999,NULL
 references/actamerica/variables/B200/CH4C13_MoleFraction_PFP.json,CH4C13_MoleFraction_PFP,permil,1,-999999,1,CH4C13_MoleFraction_PFP,permil,1,-999999,NULL
 references/actamerica/variables/B200/CH4C13_MoleFraction_PFP.json,CH4C13_PFP,per mil,1,-999999,1,CH4C13_MoleFraction_PFP,per mil,1,-999999,NULL
@@ -95,8 +95,8 @@ references/actamerica/variables/B200/OCS_MoleFraction_PFP.json,OCS_MoleFraction_
 references/actamerica/variables/B200/P218_MoleFraction_PFP.json,P218_MoleFraction_PFP,ppt,1,-999999,1,P218_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/B200/PCE_MoleFraction_PFP.json,PCE_MoleFraction_PFP,ppt,1,-999999,1,PCE_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/B200/PITCH.json,PITCH,degs,1,-999999,1,PITCH,degs,1,-999999,NULL
-references/actamerica/variables/B200/PotentialTemp_Nav.json,PotentialTemp,K,1,-999999,1,PotentialTemp,K,1,-999999,NULL
-references/actamerica/variables/B200/PotentialTemp_Nav.json,PotentialTemp_Nav,K,1,-999999,1,PotentialTemp,K,1,-999999,NULL
+references/actamerica/variables/B200/PotentialTemp_Nav.json,PotentialTemp,K,1,-999999,1,PotentialTemp_Nav,K,1,-999999,NULL
+references/actamerica/variables/B200/PotentialTemp_Nav.json,PotentialTemp_Nav,K,1,-999999,1,PotentialTemp_Nav,K,1,-999999,NULL
 references/actamerica/variables/B200/PRESSURE.json,PRESSURE,hPa,1,-999999,1,PRESSURE,hPa,1,-999999,NULL
 references/actamerica/variables/B200/ROLL.json,ROLL,degs,1,-999999,1,ROLL,degs,1,-999999,NULL
 references/actamerica/variables/B200/SF6_MoleFraction_PFP.json,SF6_CCGG_MoleFraction_PFP,ppt,1,-999999,1,SF6_MoleFraction_PFP,ppt,1,-999999,NULL
