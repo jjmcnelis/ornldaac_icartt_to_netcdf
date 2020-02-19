@@ -91,6 +91,14 @@ Path to the output directory where resource files (ICARTT header and variable me
 
 Variable table maps the input ICARTT variable names (`ICARTT_NAME`) to the output netCDF variable names (`OUTPUT_NAME`) and, most importantly, to the JSON reference file (`VARIABLE_MAP`).
 
+The other fields should be self explanatory. To apply an arithmetic function over the data during the netCDF write, stick a string with the `value==x` into the `USER_FUNC` column of the variables table:
+
+```python
+"{x}+2.5"
+```
+
+The string above is in the ACT-America 5-second merge to shift time (seconds) by 2.5 seconds. The value `x` in brackets is evaluated as a string expression. Don't expose this code in a prod environment. It relies on insecure Python `eval`.
+
 * `STRUCTURE`: *references/actamerica/STRUCTURE_B200.json*
 
 Path to the JSON representation of the output netCDF structure (the ORNL DAAC copies are located: *`references/actamerica/STRUCTURE_[AIRCRAFT].json`*). 
