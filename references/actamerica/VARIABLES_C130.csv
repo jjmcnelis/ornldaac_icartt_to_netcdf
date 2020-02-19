@@ -119,7 +119,7 @@ references/actamerica/variables/C130/THETA.json,THETA,K,1,-999999,1,THETA,K,1,-9
 references/actamerica/variables/C130/TOL_MoleFraction_PFP.json,TOL_MoleFraction_PFP,ppt,1,-999999,1,TOL_MoleFraction_PFP,ppt,1,-999999,NULL
 references/actamerica/variables/C130/TotalAirTemp.json,TotalAirTemp,K,1,-999999,1,TotalAirTemp,K,1,-999999,NULL
 references/actamerica/variables/C130/TRK.json,TRK,degs,1,-999999,1,TRK,degs,1,-999999,NULL
-references/actamerica/variables/C130/UTC.json,UTC,s,1,nan,1,time,s,1,nan,NULL
+references/actamerica/variables/C130/UTC.json,UTC,s,1,-999999,1,time,seconds since {} 00:00:00 UTC,1,-999999,"{x}+2.5"
 references/actamerica/variables/C130/VerticalSpeed.json,VerticalSpeed,m s-1,1,-999999,1,VerticalSpeed,m s-1,1,-999999,NULL
 references/actamerica/variables/C130/Wind_Direction.json,WND,Degs,1,-999999,1,Wind_Direction,Degs,1,-999999,NULL
 references/actamerica/variables/C130/Wind_Speed.json,WNS,m s-1,1,-999999,1,Wind_Speed,m s-1,1,-999999,NULL
