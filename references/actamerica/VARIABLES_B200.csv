@@ -114,7 +114,7 @@ references/actamerica/variables/B200/TOL_MoleFraction_PFP.json,TOL_MoleFraction_
 references/actamerica/variables/B200/TotalAirTemp.json,TotalAirTemp,K,1,-999999,1,TotalAirTemp,K,1,-999999,NULL
 references/actamerica/variables/B200/TRK.json,TRK,degs,1,-999999,1,TRK,degs,1,-999999,NULL
 references/actamerica/variables/B200/u_wind.json,U_WINDS,m s-1,1,-999999,1,U_WINDS,m s-1,1,-999999,NULL
-references/actamerica/variables/B200/UTC.json,UTC,s,1,nan,1,time,s,1,nan,NULL
+references/actamerica/variables/B200/UTC.json,UTC,s,1,nan,1,time,seconds since {} 00:00:00.0 UTC,1,nan,"{x}+2.5"
 references/actamerica/variables/B200/v_wind.json,V_WINDS,m s-1,1,-999999,1,V_WINDS,m s-1,1,-999999,NULL
 references/actamerica/variables/B200/VerticalSpeed.json,VerticalSpeed,ft min-1,1,-999999,1,VerticalSpeed,ft min-1,1,-999999,NULL
 references/actamerica/variables/B200/Wind_Direction.json,WND,Degs,1,-999999,1,Wind_Direction,Degs,1,-999999,NULL

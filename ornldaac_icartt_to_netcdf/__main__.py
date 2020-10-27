@@ -50,6 +50,18 @@ from ornldaac_icartt_to_netcdf import *
 
 
 
+def _warn(message: str="( miscellaneous warning )"):
+    '''Prints the input error message and exits the script with a failure.
+
+    Args:
+        message (str): warning message gets printed during eval and ignored.
+
+    '''
+    print("   WARN: {}. Skipping.".format(message))
+
+
+
+
 def _exit_with_error(message: str="(unexpected) notify: mcnelisjj@ornl.gov"):
     '''
     Prints the input error message and exits the script with a failure.
@@ -514,30 +526,32 @@ def write_netcdf(
             
             # If this is a duplicate variable, skip it.
             if name in list(ds.variables):
-                print(("   WARN: variable '{}' is duplicate variable!"
-                       " Skipping.").format(name))
+                _warn("variable '{}' is a duplicate".format(name))
                 continue
 
             # Select the reference variable row for the currernt variable.
             var_row = flight_variables[flight_variables['ICARTT_NAME']==name]
             
+            # If the 'OUTPUT_INCLUDE' is set to 0 (not 1), skip this variable.
+            if var_row.OUTPUT_INCLUDE.values[0]==0:
+                continue
+            
             # Get the output name, units, scale, fill for the netCDF variable.
             var_name = var_row.OUTPUT_NAME.values[0]
             var_units = var_row.OUTPUT_UNITS.values[0]
             var_scale = var_row.OUTPUT_SCALE.values[0]
-            # var_fill = var_row.OUTPUT_FILL.values[0]
-            
-            # print(var_name)
-            # print(var_units)
-            # print(var_scale)
+            var_fill = var_row.OUTPUT_FILL.values[0]
+            var_func = var_row.USER_FUNC.values[0]
 
-            # If this variable already exists in the file, skip.
-            if name in list(ds.variables):
-                continue
-
-            # If the variable is excluded, skip.
-            if var_row.OUTPUT_INCLUDE.values[0]==0:
-                continue
+            # Get the 'USER_FUNC' to apply to the variable; make a lambda.
+            if type(var_func) is str:
+                user_func = lambda x: eval(var_func.format(x=x))
+            else:
+                user_func = None
+           
+            # If this 'OUTPUT_NAME' is 'time', format special units.
+            if var_name=='time':
+                var_units = var_units.format(global_attributes['flight_date'])
 
             # Get the variable reference JSON. If doesn't exist, skip variable.
             try:   
@@ -550,16 +564,14 @@ def write_netcdf(
                 # Replace the units with OUTPUT_UNITS from config.
                 var_ref['attributes']['units'] = var_units
 
-                 # If the reference is None, skip over this iterated variable.
+                 # If no reference JSON is configured, skip over this variable.
                 if var_ref is None:
-                    print(("   WARN: variable '{}' has no JSON reference."
-                           " Skipping.").format(name))
+                    _warn("No JSON reference for variable '{}'".format(name))
                     continue
             
             # If exception is raised, notify user and skip this variable.
             except Exception as e:
-                print(("   WARN: variable '{}' is not in variables table."
-                       " Skipping.").format(name))
+                _warn("variable '{}' is not in variables table".format(name))
                 continue
 
             # Get the numpy data type from the reference datatype string.
@@ -570,7 +582,7 @@ def write_netcdf(
 
             try:
                 # Create a variable with a fill value.
-                x = ds.createVariable(
+                v = ds.createVariable(
                     var_name, 
                     datatype, 
                     var_ref['dimensions'], 
@@ -582,23 +594,29 @@ def write_netcdf(
 
             except:
                 # Else create a variable without a fill value.
-                x = ds.createVariable(
+                v = ds.createVariable(
                     var_name, 
                     datatype, 
                     var_ref['dimensions'], 
                     zlib=True)
             
             # Set the attirubtes.
-            x.setncatts(var_ref['attributes'])
+            v.setncatts(var_ref['attributes'])
+            
+            # If the var_func is not None, apply the user function.
+            if user_func is not None:
+                data_ = flight_data[name].apply(user_func).to_numpy()
+            else:
+                data_ = flight_data[name].to_numpy()
             
             # Add the data.
             if name=='FLIGHT':
-                x[:] = nc4.stringtochar(
+                v[:] = nc4.stringtochar(
                     np.array(list(flight_datestring), dtype='S1'))
             else:
-                x[:] = flight_data[name].to_numpy()
-                x.set_auto_mask(True)
-                x[:] = x[:]*var_scale
+                v[:] = data_
+                v.set_auto_mask(True)
+                v[:] = v[:]*var_scale
 
 
         ### SPECIAL ACT-AMERICA ROUTINE ---------------------------------------
